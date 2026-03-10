@@ -29,3 +29,21 @@ O sistema deve atualizar os dados exibidos conforme interações realizadas pelo
 
 ### RF10 — Organização visual das interfaces
 O sistema deve apresentar as informações organizadas em componentes visuais estruturados conforme o protótipo definido.
+
+### RF11 — Cadastro de usuário
+O sistema deve permitir que um novo usuário realize cadastro informando dados básicos (nome, e-mail e senha) para criação de uma conta no aplicativo.
+
+### RF12 — Logout do sistema
+O sistema deve permitir que o usuário encerre sua sessão atual, retornando à tela de login do aplicativo.
+
+### RF13 — Histórico de simulações
+O sistema deve permitir que o usuário visualize uma lista contendo simulações tributárias realizadas anteriormente.
+
+### RF14 — Visualização detalhada de simulação
+O sistema deve permitir que o usuário selecione uma simulação realizada anteriormente para visualizar seus detalhes e parâmetros utilizados.
+
+### RF15 — Recomendações estratégicas simuladas
+O sistema deve apresentar recomendações estratégicas simuladas com base nos resultados gerados pela simulação tributária.
+
+### RF16 — Exibição de mensagens informativas do sistema
+O sistema deve exibir mensagens informativas ou alertas durante a utilização da aplicação, como erros de preenchimento, sucesso de operações ou avisos de funcionamento.
