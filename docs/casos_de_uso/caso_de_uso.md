@@ -126,3 +126,159 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF12 — Clareza de escopo
 
 ---
+
+## Casos de Uso — Complementares
+
+### Caso de Uso 04 — Visualizar Lista de Clientes
+
+**Ator:** Usuário (Contador)  
+**Objetivo:** Permitir que o usuário visualize a lista de clientes simulados cadastrados no sistema.
+
+**Pré-condições:**
+- Usuário autenticado no sistema.
+- Acesso ao módulo de clientes.
+
+**Pós-condições:**
+- Lista de clientes exibida ao usuário.
+
+**Fluxo Principal:**
+
+1. Usuário acessa a funcionalidade de clientes.
+2. Sistema consulta os dados simulados disponíveis.
+3. Sistema exibe a lista de clientes cadastrados.
+
+**Fluxos Alternativos:**
+
+**A1 — Nenhum cliente disponível**
+
+1. Sistema identifica ausência de clientes cadastrados.
+2. Exibe mensagem informativa ao usuário.
+
+**Regras de Negócio:**
+
+- RN04 — Simulações utilizam apenas dados fictícios.
+
+**Requisitos Relacionados:**
+
+- RF06 — Visualização de lista de clientes simulados  
+- RNF01 — Usabilidade  
+- RNF11 — Confiabilidade básica
+
+---
+
+### Caso de Uso 05 — Consultar Detalhes de Cliente
+
+**Ator:** Usuário (Contador)  
+**Objetivo:** Permitir que o usuário visualize informações estratégicas simuladas de um cliente específico.
+
+**Pré-condições:**
+
+- Usuário autenticado.
+- Lista de clientes carregada.
+
+**Pós-condições:**
+
+- Informações detalhadas do cliente exibidas.
+
+**Fluxo Principal:**
+
+1. Usuário acessa a lista de clientes.
+2. Seleciona um cliente específico.
+3. Sistema carrega os dados simulados do cliente.
+4. Sistema exibe informações detalhadas.
+
+**Fluxos Alternativos:**
+
+**A1 — Falha ao carregar dados**
+
+1. Sistema identifica erro na recuperação das informações.
+2. Exibe mensagem de erro ao usuário.
+
+**Regras de Negócio:**
+
+- RN07 — Orientações baseadas nos dados informados.
+
+**Requisitos Relacionados:**
+
+- RF07 — Consulta de detalhes do cliente  
+- RF11 — Atualização visual das informações  
+- RNF03 — Desempenho
+
+---
+
+### Caso de Uso 06 — Visualizar Histórico de Simulações
+
+**Ator:** Usuário (Contador)  
+**Objetivo:** Permitir que o usuário visualize simulações tributárias realizadas anteriormente.
+
+**Pré-condições:**
+
+- Usuário autenticado.
+- Simulações previamente registradas.
+
+**Pós-condições:**
+
+- Histórico de simulações exibido.
+
+**Fluxo Principal:**
+
+1. Usuário acessa o módulo de simulações.
+2. Seleciona a opção de histórico.
+3. Sistema consulta as simulações registradas.
+4. Sistema exibe a lista de cenários simulados.
+
+**Fluxos Alternativos:**
+
+**A1 — Histórico vazio**
+
+1. Sistema identifica ausência de simulações.
+2. Exibe mensagem informando que não existem cenários registrados.
+
+**Regras de Negócio:**
+
+- RN06 — Organização por cenários.
+
+**Requisitos Relacionados:**
+
+- RF15 — Histórico de simulações  
+- RNF05 — Manutenibilidade  
+- RNF12 — Clareza de escopo
+
+---
+
+### Caso de Uso 07 — Encerrar Sessão (Logout)
+
+**Ator:** Usuário (Contador)  
+**Objetivo:** Permitir que o usuário finalize sua sessão no aplicativo.
+
+**Pré-condições:**
+
+- Usuário autenticado no sistema.
+
+**Pós-condições:**
+
+- Sessão encerrada.
+- Usuário redirecionado para a tela de login.
+
+**Fluxo Principal:**
+
+1. Usuário acessa a opção de logout.
+2. Sistema encerra a sessão atual.
+3. Sistema redireciona para a tela de login.
+
+**Fluxos Alternativos:**
+
+**A1 — Cancelamento da ação**
+
+1. Usuário cancela a solicitação de logout.
+2. Sistema mantém a sessão ativa.
+
+**Regras de Negócio:**
+
+- RN01 — Acesso restrito ao sistema.
+
+**Requisitos Relacionados:**
+
+- RF14 — Logout do sistema  
+- RNF01 — Usabilidade  
+- RNF16 — Estabilidade da navegação
