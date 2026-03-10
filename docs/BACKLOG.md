@@ -36,26 +36,10 @@ Disponibilizar uma tela inicial com indicadores simulados e informações estrat
 
 ---
 
-## Épico 3 — Pesquisa Informativa Contábil
-**Descrição:**  
-Permitir que o usuário realize consultas informativas dentro do aplicativo para obter orientações contábeis simuladas de forma rápida.
-
-### User Stories
-- **US20 — Realizar pesquisa contábil**  
-  *Como contador, quero pesquisar temas contábeis para obter orientações técnicas simuladas.*
-
-- **US21 — Visualizar resultado da pesquisa**  
-  *Como contador, quero visualizar explicações sobre o tema pesquisado para entender melhor a situação contábil.*
-
-- **US22 — Organizar informações pesquisadas**  
-  *Como contador, quero que os resultados sejam exibidos de forma organizada para facilitar a leitura e compreensão.*
-
----
-
 # Observações
-- Cada épico pode ser expandido conforme a evolução do projeto.
-- O backlog inicial contém apenas **épicos e primeiras user stories em alto nível**.
-- As histórias seguem o formato padrão de desenvolvimento ágil:
+- Cada épico pode ser expandido conforme a evolução do projeto.  
+- O backlog inicial contém apenas **épicos e primeiras user stories em alto nível**.  
+- As histórias seguem o formato padrão de desenvolvimento ágil:  
 
 **Como [ator], quero [ação] para [benefício].**
 
@@ -65,14 +49,13 @@ Permitir que o usuário realize consultas informativas dentro do aplicativo para
 
 Com base no **cronograma da disciplina**, as próximas etapas do projeto serão:
 
-1. Priorizar as user stories essenciais para o **MVP inicial do aplicativo**.
-2. Elaborar a **modelagem do sistema**:
-   - definição das telas
-   - árvore de widgets
-   - fluxos principais
-3. Desenvolver os **protótipos iniciais das interfaces no Flutter**.
-4. Implementar as primeiras telas:
-   - tela de login
-   - dashboard inicial
-   - tela de pesquisa informativa.
-5. Organizar continuamente a **documentação do projeto no repositório GitHub**.
+1. Priorizar as user stories essenciais para o **MVP inicial do aplicativo**.  
+2. Elaborar a **modelagem do sistema**:  
+   - definição das telas  
+   - árvore de widgets  
+   - fluxos principais  
+3. Desenvolver os **protótipos iniciais das interfaces no Flutter**.  
+4. Implementar as primeiras telas:  
+   - tela de login  
+   - dashboard inicial  
+5. Organizar continuamente a **documentação do projeto no repositório GitHub**.  
