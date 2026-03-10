@@ -1,4 +1,4 @@
-## Regras de Negócio (RN)
+**## Regras de Negócio (RN)
 
 ### RN01 — Acesso restrito ao sistema
 O aplicativo deve ser utilizado apenas por usuários previamente cadastrados, representando profissionais ou colaboradores de escritórios contábeis.
@@ -20,3 +20,4 @@ As simulações devem ser armazenadas como cenários independentes, permitindo c
 
 ### RN07 — Orientações baseadas nos dados informados
 As orientações técnicas exibidas pelo aplicativo devem ser geradas exclusivamente com base nos dados fornecidos pelo usuário na simulação.
+**
