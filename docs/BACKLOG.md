@@ -34,31 +34,7 @@ Disponibilizar uma tela inicial com indicadores simulados e informações estrat
 - **US12 — Acessar funcionalidades principais**  
   *Como contador, quero acessar rapidamente as principais funcionalidades do aplicativo através do dashboard.*
 
----
-
-# Observações
-- Cada épico pode ser expandido conforme a evolução do projeto.  
-- O backlog inicial contém apenas **épicos e primeiras user stories em alto nível**.  
-- As histórias seguem o formato padrão de desenvolvimento ágil:  
-
-**Como [ator], quero [ação] para [benefício].**
-
----
-
-# Próximos Passos
-
-Com base no **cronograma da disciplina**, as próximas etapas do projeto serão:
-
-1. Priorizar as user stories essenciais para o **MVP inicial do aplicativo**.  
-2. Elaborar a **modelagem do sistema**:  
-   - definição das telas  
-   - árvore de widgets  
-   - fluxos principais  
-3. Desenvolver os **protótipos iniciais das interfaces no Flutter**.  
-4. Implementar as primeiras telas:  
-   - tela de login  
-   - dashboard inicial  
-5. Organizar continuamente a **documentação do projeto no repositório GitHub**.  
+---  
 
 ## Épico 3 — Simulação de Cenários Tributários
 **Descrição:**  
