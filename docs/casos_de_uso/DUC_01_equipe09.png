@@ -1,0 +1,28 @@
+@startuml
+title Diagrama de Casos de Uso - Atlas Contabil
+
+left to right direction
+
+actor Contador as Usuario
+
+rectangle "Atlas Contabil" {
+
+  (Realizar Login) as UC1
+  (Visualizar Lista de Clientes) as UC2
+  (Consultar Detalhes de Cliente) as UC3
+  (Simular Cenario Tributario) as UC4
+  (Visualizar Historico de Simulacoes) as UC5
+  (Encerrar Sessao) as UC6
+
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+Usuario --> UC5
+Usuario --> UC6
+
+UC3 ..> UC2 : <<include>>
+
+@enduml
