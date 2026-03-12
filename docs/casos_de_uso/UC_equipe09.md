@@ -4,221 +4,476 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ---
 
-## Caso de Uso 01 — Realizar Login
+# Módulo 1 — Acesso ao Sistema
 
-**Ator:** Usuário (Contador)  
-**Objetivo:** Acessar o aplicativo mediante autenticação válida.
+## Caso de Uso 01 — Cadastrar Usuário
 
-### Pré-condições:
-- O aplicativo deve estar instalado e funcional.
-- O usuário deve possuir acesso autorizado ao sistema acadêmico.
+**Ator:** Usuário  
 
-### Pós-condições:
-- Sessão iniciada com sucesso.
-- Usuário redirecionado ao Dashboard.
+**Objetivo:** Permitir que um novo usuário crie uma conta no sistema.
 
-### Fluxo Principal:
-1) Usuário abre o aplicativo.  
-2) Sistema exibe a tela de login.  
-3) Usuário informa credenciais.  
-4) Sistema valida os dados inseridos.  
-5) Sistema redireciona para a tela inicial (Dashboard).  
+### Pré-condições
+- Aplicativo instalado.
 
-### Fluxos Alternativos:
+### Pós-condições
+- Conta de usuário criada no sistema.
 
-**A1 — Credenciais inválidas**  
-1) Sistema identifica erro nas credenciais.  
-2) Exibe mensagem informando falha no login.  
-3) Permite nova tentativa.  
+### Fluxo Principal
+1. Usuário acessa tela de cadastro.
+2. Usuário informa nome, e-mail e senha.
+3. Sistema valida os dados.
+4. Sistema registra o novo usuário.
 
-**A2 — Campos não preenchidos**  
-1) Sistema detecta campos vazios.  
-2) Solicita preenchimento obrigatório.  
+### Regras de Negócio
+- RN01 — Acesso restrito ao sistema.
 
-### Regras de Negócio:
-- RN01: O acesso ao sistema é restrito a usuários autorizados.  
-- RN02: Dados utilizados são apenas simulados para fins acadêmicos.  
-
-### Requisitos Relacionados:
-- RF01 — Exibição da tela inicial  
-- RF03 — Navegação entre telas  
-- RNF01 — Usabilidade  
-- RNF11 — Confiabilidade básica  
+### Requisitos Relacionados
+- RF11 — Cadastro de usuário
+- RNF01 — Usabilidade
+- RNF07 — Segurança acadêmica
+- RNF13 — Compatibilidade com dispositivos móveis
 
 ---
 
-## Caso de Uso 02 — Simular Cenário Tributário
+## Caso de Uso 02 — Realizar Login
 
-**Ator:** Usuário (Contador)  
-**Objetivo:** Avaliar impactos estratégicos simulados a partir da alteração de parâmetros tributários.
+**Ator:** Usuário
 
-### Pré-condições:
-- Usuário autenticado.  
-- Acesso ao módulo de simulação.  
+**Objetivo:** Permitir acesso ao aplicativo mediante autenticação.
 
-### Pós-condições:
-- Cenário estratégico atualizado e exibido.  
+### Pré-condições
+- Usuário cadastrado.
 
-### Fluxo Principal:
-1) Usuário acessa o simulador estratégico.  
-2) Altera parâmetros simulados (faturamento, regime ou funcionários).  
-3) Sistema processa os dados.  
-4) Sistema apresenta resultado estimado do cenário.  
+### Pós-condições
+- Usuário autenticado no sistema.
 
-### Fluxos Alternativos:
+### Fluxo Principal
+1. Usuário abre o aplicativo.
+2. Sistema exibe tela de login.
+3. Usuário informa e-mail e senha.
+4. Sistema valida credenciais.
+5. Usuário acessa o sistema.
 
-**A1 — Valores inválidos**  
-1) Sistema identifica dados inconsistentes.  
-2) Solicita correção antes da simulação.  
+### Fluxos Alternativos
 
-**A2 — Cancelamento da simulação**  
-1) Usuário retorna à tela anterior.  
-2) Nenhuma alteração é salva.  
+**A1 — Credenciais inválidas**
 
-### Regras de Negócio:
-- RN04: Simulações utilizam apenas dados fictícios.  
-- RN05: Resultados possuem finalidade exclusivamente acadêmica.  
+1. Sistema identifica erro.
+2. Sistema exibe mensagem informativa.
 
-### Requisitos Relacionados:
-- RF08 — Simulação básica de cenário tributário  
-- RF11 — Atualização visual das informações  
-- RNF05 — Manutenibilidade  
-- RNF12 — Clareza de escopo  
+### Regras de Negócio
+- RN01 — Acesso restrito ao sistema.
+
+### Requisitos Relacionados
+- RF01 — Exibição da tela inicial
+- RF16 — Exibição de mensagens informativas
+- RNF03 — Desempenho
+- RNF14 — Tempo de resposta das funcionalidades
 
 ---
 
-## Casos de Uso — Complementares
+## Caso de Uso 03 — Encerrar Sessão (Logout)
 
-### Caso de Uso 03 — Visualizar Lista de Clientes
+**Ator:** Usuário
 
-**Ator:** Usuário (Contador)  
-**Objetivo:** Permitir que o usuário visualize a lista de clientes simulados cadastrados no sistema.
-
-**Pré-condições:**  
-- Usuário autenticado no sistema.  
-- Acesso ao módulo de clientes.  
-
-**Pós-condições:**  
-- Lista de clientes exibida ao usuário.  
-
-**Fluxo Principal:**
-
-1. Usuário acessa a funcionalidade de clientes.  
-2. Sistema consulta os dados simulados disponíveis.  
-3. Sistema exibe a lista de clientes cadastrados.  
-
-**Fluxos Alternativos:**
-
-**A1 — Nenhum cliente disponível**  
-
-1. Sistema identifica ausência de clientes cadastrados.  
-2. Exibe mensagem informativa ao usuário.  
-
-**Regras de Negócio:**  
-- RN04 — Simulações utilizam apenas dados fictícios.  
-
-**Requisitos Relacionados:**  
-- RF06 — Visualização de lista de clientes simulados  
-- RNF01 — Usabilidade  
-- RNF11 — Confiabilidade básica  
-
----
-
-### Caso de Uso 04 — Consultar Detalhes de Cliente
-
-**Ator:** Usuário (Contador)  
-**Objetivo:** Permitir que o usuário visualize informações estratégicas simuladas de um cliente específico.
-
-**Pré-condições:**  
-- Usuário autenticado.  
-- Lista de clientes carregada.  
-
-**Pós-condições:**  
-- Informações detalhadas do cliente exibidas.  
-
-**Fluxo Principal:**  
-1. Usuário acessa a lista de clientes.  
-2. Seleciona um cliente específico.  
-3. Sistema carrega os dados simulados do cliente.  
-4. Sistema exibe informações detalhadas.  
-
-**Fluxos Alternativos:**  
-
-**A1 — Falha ao carregar dados**  
-1. Sistema identifica erro na recuperação das informações.  
-2. Exibe mensagem de erro ao usuário.  
-
-**Regras de Negócio:**  
-- RN07 — Orientações baseadas nos dados informados.  
-
-**Requisitos Relacionados:**  
-- RF07 — Consulta de detalhes do cliente  
-- RF11 — Atualização visual das informações  
-- RNF03 — Desempenho  
-
----
-
-### Caso de Uso 05 — Visualizar Histórico de Simulações
-
-**Ator:** Usuário (Contador)  
-**Objetivo:** Permitir que o usuário visualize simulações tributárias realizadas anteriormente.
-
-**Pré-condições:**  
-- Usuário autenticado.  
-- Simulações previamente registradas.  
-
-**Pós-condições:**  
-- Histórico de simulações exibido.  
-
-**Fluxo Principal:**  
-1. Usuário acessa o módulo de simulações.  
-2. Seleciona a opção de histórico.  
-3. Sistema consulta as simulações registradas.  
-4. Sistema exibe a lista de cenários simulados.  
-
-**Fluxos Alternativos:**  
-
-**A1 — Histórico vazio**  
-1. Sistema identifica ausência de simulações.  
-2. Exibe mensagem informando que não existem cenários registrados.  
-
-**Regras de Negócio:**  
-- RN06 — Organização por cenários.  
-
-**Requisitos Relacionados:**  
-- RF15 — Histórico de simulações  
-- RNF05 — Manutenibilidade  
-- RNF12 — Clareza de escopo  
-
----
-
-### Caso de Uso 06 — Encerrar Sessão (Logout)
-
-**Ator:** Usuário (Contador)  
 **Objetivo:** Permitir que o usuário finalize sua sessão no aplicativo.
 
-**Pré-condições:**  
-- Usuário autenticado no sistema.  
+### Pré-condições
+- Usuário autenticado.
 
-**Pós-condições:**  
-- Sessão encerrada.  
-- Usuário redirecionado para a tela de login.  
+### Pós-condições
+- Sessão encerrada.
 
-**Fluxo Principal:**  
-1. Usuário acessa a opção de logout.  
-2. Sistema encerra a sessão atual.  
-3. Sistema redireciona para a tela de login.  
+### Fluxo Principal
+1. Usuário seleciona opção de logout.
+2. Sistema encerra sessão.
+3. Sistema retorna à tela de login.
 
-**Fluxos Alternativos:**  
+### Regras de Negócio
+- RN01 — Acesso restrito ao sistema.
 
-**A1 — Cancelamento da ação**  
-1. Usuário cancela a solicitação de logout.  
-2. Sistema mantém a sessão ativa.  
+### Requisitos Relacionados
+- RF12 — Logout do sistema
+- RNF11 — Confiabilidade básica
+- RNF16 — Estabilidade da navegação
 
-**Regras de Negócio:**  
-- RN01 — Acesso restrito ao sistema.  
+---
 
-**Requisitos Relacionados:**  
-- RF14 — Logout do sistema  
-- RNF01 — Usabilidade  
-- RNF16 — Estabilidade da navegação  
+# Módulo 2 — Interface e Navegação
+
+## Caso de Uso 04 — Exibir Tela Inicial
+
+**Ator:** Sistema
+
+**Objetivo:** Apresentar a tela inicial do aplicativo.
+
+### Fluxo Principal
+1. Sistema carrega interface principal.
+2. Exibe funcionalidades disponíveis.
+
+### Regras de Negócio
+- RN01 — Acesso restrito ao sistema.
+
+### Requisitos Relacionados
+- RF01 — Exibição da tela inicial
+- RNF01 — Usabilidade
+- RNF08 — Padronização visual
+
+---
+
+## Caso de Uso 05 — Navegar entre Telas
+
+**Ator:** Usuário
+
+**Objetivo:** Permitir acesso às funcionalidades do sistema.
+
+### Fluxo Principal
+1. Usuário seleciona funcionalidade.
+2. Sistema abre tela correspondente.
+
+### Regras de Negócio
+- RN01 — Acesso restrito ao sistema.
+
+### Requisitos Relacionados
+- RF03 — Navegação entre telas
+- RNF03 — Desempenho
+- RNF16 — Estabilidade da navegação
+
+---
+
+## Caso de Uso 06 — Atualizar Informações da Interface
+
+**Ator:** Sistema
+
+**Objetivo:** Atualizar os dados exibidos na tela.
+
+### Fluxo Principal
+1. Usuário realiza ação.
+2. Sistema processa a ação.
+3. Interface é atualizada.
+
+### Regras de Negócio
+- RN05 — Atualização manual dos dados.
+
+### Requisitos Relacionados
+- RF09 — Atualização visual das informações
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 07 — Organizar Interface Visual
+
+**Ator:** Sistema
+
+**Objetivo:** Manter organização visual conforme o protótipo.
+
+### Fluxo Principal
+1. Sistema aplica layout definido.
+2. Componentes são exibidos organizados.
+
+### Regras de Negócio
+- RN05 — Atualização manual dos dados.
+
+### Requisitos Relacionados
+- RF10 — Organização visual das interfaces
+- RNF08 — Padronização visual
+
+---
+
+# Módulo 3 — Dashboard
+
+## Caso de Uso 08 — Visualizar Dashboard
+
+**Ator:** Usuário
+
+**Objetivo:** Apresentar visão geral do sistema.
+
+### Pré-condições
+- Usuário autenticado.
+
+### Fluxo Principal
+1. Sistema carrega dados simulados.
+2. Sistema apresenta indicadores.
+
+### Regras de Negócio
+- RN02 — Simulações não possuem valor legal.
+
+### Requisitos Relacionados
+- RF02 — Visualização do Dashboard
+- RNF01 — Usabilidade
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 09 — Acessar Modo Estratégico
+
+**Ator:** Usuário
+
+**Objetivo:** Visualizar visão geral estratégica da carteira de clientes.
+
+### Fluxo Principal
+1. Usuário acessa modo estratégico.
+2. Sistema apresenta dados simulados.
+
+### Regras de Negócio
+- RN02 — Simulações não possuem valor legal.
+
+### Requisitos Relacionados
+- RF08 — Acesso ao modo estratégico
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 10 — Exibir Mensagens Informativas
+
+**Ator:** Sistema
+
+**Objetivo:** Informar eventos ou erros ao usuário.
+
+### Fluxo Principal
+1. Sistema identifica evento.
+2. Sistema exibe mensagem.
+
+### Regras de Negócio
+- RN02 — Simulações não possuem valor legal.
+
+### Requisitos Relacionados
+- RF16 — Exibição de mensagens informativas
+- RNF11 — Confiabilidade básica
+
+---
+
+# Módulo 4 — Clientes
+
+## Caso de Uso 11 — Visualizar Lista de Clientes
+
+**Ator:** Usuário
+
+**Objetivo:** Permitir acesso à lista de clientes simulados.
+
+### Fluxo Principal
+1. Usuário acessa módulo de clientes.
+2. Sistema consulta dados simulados.
+3. Lista é exibida.
+
+### Regras de Negócio
+- RN07 — Orientações baseadas nos dados informados.
+
+### Requisitos Relacionados
+- RF04 — Visualização de lista de clientes simulados
+- RNF01 — Usabilidade
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 12 — Consultar Detalhes de Cliente
+
+**Ator:** Usuário
+
+**Objetivo:** Visualizar informações estratégicas de um cliente.
+
+### Fluxo Principal
+1. Usuário seleciona cliente.
+2. Sistema carrega dados.
+3. Sistema exibe informações.
+
+### Regras de Negócio
+- RN07 — Orientações baseadas nos dados informados.
+
+### Requisitos Relacionados
+- RF05 — Consulta de detalhes do cliente
+- RNF03 — Desempenho
+
+---
+
+# Módulo 5 — Simulação Tributária
+
+## Caso de Uso 13 — Acessar Simulador Tributário
+
+**Ator:** Usuário
+
+**Objetivo:** Permitir acesso à ferramenta de simulação.
+
+### Fluxo Principal
+1. Usuário acessa simulador.
+2. Sistema abre interface.
+
+### Regras de Negócio
+- RN02 — Simulações não possuem valor legal.
+
+### Requisitos Relacionados
+- RF06 — Simulação básica de cenário tributário
+- RNF01 — Usabilidade
+
+---
+
+## Caso de Uso 14 — Inserir Dados da Simulação
+
+**Ator:** Usuário
+
+**Objetivo:** Informar parâmetros da simulação.
+
+### Fluxo Principal
+1. Usuário informa dados fiscais.
+2. Sistema registra parâmetros.
+
+### Regras de Negócio
+- RN03 — Dados obrigatórios para simulação
+- RN05 — Atualização manual dos dados
+
+### Requisitos Relacionados
+- RF06 — Simulação tributária
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 15 — Validar Dados da Simulação
+
+**Ator:** Sistema
+
+**Objetivo:** Garantir consistência dos dados.
+
+### Fluxo Principal
+1. Sistema verifica dados informados.
+2. Sistema confirma validade.
+
+### Regras de Negócio
+- RN03 — Dados obrigatórios para simulação
+
+### Requisitos Relacionados
+- RF06 — Simulação tributária
+- RNF11 — Confiabilidade básica
+
+---
+
+## Caso de Uso 16 — Executar Simulação Tributária
+
+**Ator:** Sistema
+
+**Objetivo:** Processar dados e gerar cenário.
+
+### Fluxo Principal
+1. Sistema processa parâmetros.
+2. Calcula resultado.
+
+### Regras de Negócio
+- RN02 — Simulações não possuem valor legal.
+
+### Requisitos Relacionados
+- RF06 — Simulação tributária
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 17 — Exibir Resultado da Simulação
+
+**Ator:** Sistema
+
+**Objetivo:** Apresentar cenário tributário.
+
+### Fluxo Principal
+1. Sistema gera resultado.
+2. Sistema exibe informações.
+
+### Regras de Negócio
+- RN02 — Simulações não possuem valor legal.
+
+### Requisitos Relacionados
+- RF06 — Simulação tributária
+- RNF01 — Usabilidade
+
+---
+
+## Caso de Uso 18 — Gerar Recomendações Estratégicas
+
+**Ator:** Sistema
+
+**Objetivo:** Apresentar recomendações com base na simulação.
+
+### Fluxo Principal
+1. Sistema analisa resultado.
+2. Sistema apresenta recomendações.
+
+### Regras de Negócio
+- RN07 — Orientações baseadas nos dados informados.
+
+### Requisitos Relacionados
+- RF15 — Recomendações estratégicas simuladas
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 19 — Gerar Resumo Estratégico
+
+**Ator:** Sistema
+
+**Objetivo:** Criar resumo de informações simuladas.
+
+### Fluxo Principal
+1. Sistema organiza dados da simulação.
+2. Sistema apresenta resumo.
+
+### Regras de Negócio
+- RN02 — Simulações não possuem valor legal.
+
+### Requisitos Relacionados
+- RF07 — Geração de resumo
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 20 — Visualizar Histórico de Simulações
+
+**Ator:** Usuário
+
+**Objetivo:** Consultar simulações anteriores.
+
+### Fluxo Principal
+1. Usuário acessa histórico.
+2. Sistema apresenta lista.
+
+### Regras de Negócio
+- RN04 — Histórico de simulações
+- RN06 — Organização por cenários
+
+### Requisitos Relacionados
+- RF13 — Histórico de simulações
+- RNF01 — Usabilidade
+
+---
+
+## Caso de Uso 21 — Visualizar Detalhes de Simulação
+
+**Ator:** Usuário
+
+**Objetivo:** Analisar uma simulação específica.
+
+### Fluxo Principal
+1. Usuário seleciona simulação.
+2. Sistema exibe detalhes.
+
+### Regras de Negócio
+- RN04 — Histórico de simulações
+
+### Requisitos Relacionados
+- RF14 — Visualização detalhada de simulação
+- RNF03 — Desempenho
+
+---
+
+## Caso de Uso 22 — Comparar Cenários Tributários
+
+**Ator:** Usuário
+
+**Objetivo:** Comparar diferentes simulações.
+
+### Fluxo Principal
+1. Usuário seleciona cenários.
+2. Sistema apresenta comparação.
+
+### Regras de Negócio
+- RN06 — Organização por cenários
+
+### Requisitos Relacionados
+- RF13 — Histórico de simulações
+- RNF03 — Desempenho
