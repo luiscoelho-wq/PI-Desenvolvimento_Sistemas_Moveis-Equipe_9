@@ -8,7 +8,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 01 — Cadastrar Usuário
 
-**Ator:** Usuário  
+**Ator:** Contador  
 
 **Objetivo:** Permitir que um novo usuário crie uma conta no sistema.
 
@@ -37,7 +37,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 02 — Realizar Login
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Permitir acesso ao aplicativo mediante autenticação.
 
@@ -74,7 +74,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 03 — Encerrar Sessão (Logout)
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Permitir que o usuário finalize sua sessão no aplicativo.
 
@@ -123,7 +123,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 05 — Navegar entre Telas
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Permitir acesso às funcionalidades do sistema.
 
@@ -184,7 +184,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 08 — Visualizar Dashboard
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Apresentar visão geral do sistema.
 
@@ -207,7 +207,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 09 — Acessar Modo Estratégico
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Visualizar visão geral estratégica da carteira de clientes.
 
@@ -247,7 +247,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 11 — Visualizar Lista de Clientes
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Permitir acesso à lista de clientes simulados.
 
@@ -268,7 +268,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 12 — Consultar Detalhes de Cliente
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Visualizar informações estratégicas de um cliente.
 
@@ -290,7 +290,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 13 — Acessar Simulador Tributário
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Permitir acesso à ferramenta de simulação.
 
@@ -309,7 +309,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 14 — Inserir Dados da Simulação
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Informar parâmetros da simulação.
 
@@ -424,7 +424,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 20 — Visualizar Histórico de Simulações
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Consultar simulações anteriores.
 
@@ -444,7 +444,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 21 — Visualizar Detalhes de Simulação
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Analisar uma simulação específica.
 
@@ -463,7 +463,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Caso de Uso 22 — Comparar Cenários Tributários
 
-**Ator:** Usuário
+**Ator:** Contador  
 
 **Objetivo:** Comparar diferentes simulações.
 
