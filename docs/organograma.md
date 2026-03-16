@@ -66,10 +66,54 @@ A tela principal utiliza a combinação dos widgets acima para oferecer uma vis�
 ### Estrutura da Interface
 * **Cabeçalho (AppBar):** Saudação personalizada e botão de notificações.
 * **Corpo (Body):** Lista rolável contendo:
-    * **Resumo Rápido:** `Cards` com alertas fiscais.
-    * **Insights do Dia:** Dados de crescimento e limites de clientes.
-    * **Ação Principal:** `ElevatedButton` para "Descrever Cenário Fiscal".
+    * **`Resumo Rápido:`** `Cards` com alertas fiscais.
+    * **`Insights do Dia:`** Dados de crescimento e limites de clientes.
+    * **`Ação Principal:`** `ElevatedButton` para "Descrever Cenário Fiscal".
  * **Navegação (Bottom Bar):** Atalhos para Home, Calendário e Perfil.
 <img width="1920" height="1080" alt="6" src="https://github.com/user-attachments/assets/d1d220ee-f81e-42d9-aa7d-5011ff220a71" />
 
-   
+---
+
+## 7. Tela de Insights Inteligentes
+
+A **Tela de Insights** tem como propósito central transformar dados brutos do calendário contábil em análises estratégicas e recomendações práticas para o usuário, otimizando a tomada de decisão.
+
+Construída sobre um `Scaffold`, a interface utiliza uma `AppBar` simples com o título **"Insights"** e uma `BottomNavigationBar` para navegação intuitiva entre os módulos de Home, Calendário e Perfil.
+
+O coração da tela reside no **Body**, que implementa um `ListView` para organizar o fluxo de informações de forma escalável:
+
+* **`Gestão de Ações:`** Uma sequência de `Cards` interativos organiza tarefas críticas, como finalização de relatórios fiscais (*tax reports*), revisões jurídicas, atualizações de registros e consultas de clientes.
+* **`Inteligência Artificial:`** Inclui um card específico de **Recomendações via IA**, destacando o caráter tecnológico e preventivo da plataforma.
+* **`Visualização de Dados:`** Na base da lista, o sistema apresenta dois painéis de análise visual que facilitam a interpretação de métricas complexas:
+  * **`PieChart` (Gráfico de Pizza):** Para o resumo proporcional das atividades do mês.
+  * **`BarChart` (Gráfico de Barras):** Focado em insights fiscais comparativos.
+<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/b52b8d01-37f3-443e-86b6-2419bf58d536" />
+
+---
+
+### Organização do Conteúdo (Layout Principal)
+
+O corpo da tela é estruturado em uma `Column` principal, dividida em dois blocos estratégicos:
+
+#### Bloco Superior: Identidade Visual
+Responsável pelo reconhecimento da marca e impacto inicial:
+* **`Center`**: Garante a centralização horizontal de todo o grupo de branding.
+* **`Column`**: Organiza os elementos da marca em sequência vertical.
+    * **`SizedBox`**: Define o espaçamento superior em relação ao topo da tela.
+       * **`Image`**: Exibe o logotipo oficial do **Atlas Contábil**.
+          * **`SizedBox`**: Cria um respiro visual entre a imagem e o texto.
+             * **`Text ("Atlas")`**: Título principal com estilo tipográfico destacado.
+                * **`SizedBox`**: Pequeno intervalo para separação de hierarquia.
+                   * **`Text ("Guia contábil estratégico")`**: Subtítulo ou slogan da marca.
+
+#### Bloco Inferior: Ações do Usuário
+Focado na conversão e navegabilidade inicial:
+* **`Center`**: Mantém o alinhamento centralizado dos botões de interação.
+* **`Column`**: Empilha as opções de acesso para facilitar o clique.
+    * **`SizedBox`**: Espaçamento técnico para separar a identidade visual das ações.
+      * **`ElevatedButton ("Fazer Login")`**: Ação primária, com preenchimento para maior destaque visual.
+          * **`SizedBox`**: Espaçamento entre os botões para evitar cliques acidentais.
+             * **`OutlinedButton ("Criar uma Nova Conta")`**: Ação secundária, com estilo vazado para diferenciar a hierarquia de importância.
+               
+                  <img width="516" height="729" alt="image" src="https://github.com/user-attachments/assets/1893ee00-2076-4d86-a833-8ac084f687fc" />
+
