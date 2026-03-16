@@ -477,3 +477,37 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF13 — Histórico de simulações
 - RNF03 — Desempenho
+
+---
+
+# Funcionalidades do MVP
+
+Para o aplicativo **Atlas Contábil**, foi definido um conjunto mínimo de funcionalidades que demonstram o funcionamento principal do sistema.
+
+Essas funcionalidades compõem o **MVP (Minimum Viable Product)** do projeto.
+
+## Casos de Uso incluídos no MVP
+
+- **UC02 — Realizar Login**
+- **UC04 — Exibir Tela Inicial**
+- **UC05 — Navegar entre Telas**
+- **UC08 — Visualizar Dashboard**
+- **UC11 — Visualizar Lista de Clientes**
+- **UC12 — Consultar Detalhes de Cliente**
+- **UC13 — Acessar Simulador Tributário**
+- **UC14 — Inserir Dados da Simulação**
+- **UC15 — Validar Dados da Simulação**
+- **UC16 — Executar Simulação Tributária**
+- **UC17 — Exibir Resultado da Simulação**
+
+## Objetivo do MVP
+
+O MVP permite demonstrar o fluxo principal do sistema:
+
+1. O usuário realiza login no aplicativo.
+2. O sistema apresenta o dashboard com indicadores simulados.
+3. O usuário pode acessar a lista de clientes simulados.
+4. O usuário pode realizar uma simulação tributária.
+5. O sistema apresenta o resultado da simulação.
+
+Com esse conjunto de funcionalidades, já é possível demonstrar o funcionamento central do **Atlas Contábil**.
