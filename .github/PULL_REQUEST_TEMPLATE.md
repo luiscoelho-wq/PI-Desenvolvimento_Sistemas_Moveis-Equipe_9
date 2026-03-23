@@ -7,8 +7,8 @@ Explique o que foi alterado.
 - [ ] Documentação
 
 ## Issues relacionadas
-Closes: #XX
-Relates to: #YY
+- Closes: #XX
+- Relates to: #YY
 
 ## Checklist
 - [ ] Testes adicionados
