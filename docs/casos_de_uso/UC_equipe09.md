@@ -4,7 +4,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ---
 
-# Módulo 1 — Autenticação
+# Módulo 1 — Acesso ao Sistema
 
 ## Caso de Uso 01 — Cadastrar Usuário
 
