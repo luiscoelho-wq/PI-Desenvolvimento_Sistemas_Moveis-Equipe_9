@@ -107,6 +107,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Apresentar a tela inicial do aplicativo.
 
+### Pré-condições
+- Sistema inicializado.
+
+### Pós-condições
+- Tela inicial exibida ao usuário.
+
 ### Fluxo Principal
 1. Sistema carrega interface principal.
 2. Exibe funcionalidades disponíveis.
@@ -126,6 +132,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Contador  
 
 **Objetivo:** Permitir acesso às funcionalidades do sistema.
+
+### Pré-condições
+- Usuário autenticado.
+
+### Pós-condições
+- Tela selecionada exibida.
 
 ### Fluxo Principal
 1. Usuário seleciona funcionalidade.
@@ -147,6 +159,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Atualizar os dados exibidos na tela.
 
+### Pré-condições
+- Interface carregada.
+
+### Pós-condições
+- Dados atualizados na interface.
+
 ### Fluxo Principal
 1. Usuário realiza ação.
 2. Sistema processa a ação.
@@ -166,6 +184,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Sistema
 
 **Objetivo:** Manter organização visual conforme o protótipo.
+
+### Pré-condições
+- Interface carregada.
+
+### Pós-condições
+- Interface organizada conforme padrão.
 
 ### Fluxo Principal
 1. Sistema aplica layout definido.
@@ -191,6 +215,9 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Pré-condições
 - Usuário autenticado.
 
+### Pós-condições
+- Dashboard exibido.
+
 ### Fluxo Principal
 1. Sistema carrega dados simulados.
 2. Sistema apresenta indicadores.
@@ -211,6 +238,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Visualizar visão geral estratégica da carteira de clientes.
 
+### Pré-condições
+- Usuário autenticado.
+
+### Pós-condições
+- Modo estratégico exibido.
+
 ### Fluxo Principal
 1. Usuário acessa modo estratégico.
 2. Sistema apresenta dados simulados.
@@ -229,6 +262,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Sistema
 
 **Objetivo:** Informar eventos ou erros ao usuário.
+
+### Pré-condições
+- Evento ou erro identificado.
+
+### Pós-condições
+- Mensagem exibida ao usuário.
 
 ### Fluxo Principal
 1. Sistema identifica evento.
@@ -251,6 +290,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Permitir acesso à lista de clientes simulados.
 
+### Pré-condições
+- Usuário autenticado.
+
+### Pós-condições
+- Lista de clientes exibida.
+
 ### Fluxo Principal
 1. Usuário acessa módulo de clientes.
 2. Sistema consulta dados simulados.
@@ -271,6 +316,13 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Contador  
 
 **Objetivo:** Visualizar informações estratégicas de um cliente.
+
+### Pré-condições
+- Usuário autenticado.
+- Cliente selecionado.
+
+### Pós-condições
+- Detalhes do cliente exibidos.
 
 ### Fluxo Principal
 1. Usuário seleciona cliente.
@@ -294,6 +346,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Permitir acesso à ferramenta de simulação.
 
+### Pré-condições
+- Usuário autenticado.
+
+### Pós-condições
+- Interface do simulador exibida.
+
 ### Fluxo Principal
 1. Usuário acessa simulador.
 2. Sistema abre interface.
@@ -312,6 +370,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Contador  
 
 **Objetivo:** Informar parâmetros da simulação.
+
+### Pré-condições
+- Simulador aberto.
+
+### Pós-condições
+- Dados da simulação registrados.
 
 ### Fluxo Principal
 1. Usuário informa dados fiscais.
@@ -333,6 +397,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Garantir consistência dos dados.
 
+### Pré-condições
+- Dados informados pelo usuário.
+
+### Pós-condições
+- Dados validados.
+
 ### Fluxo Principal
 1. Sistema verifica dados informados.
 2. Sistema confirma validade.
@@ -351,6 +421,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Sistema
 
 **Objetivo:** Processar dados e gerar cenário.
+
+### Pré-condições
+- Dados validados.
+
+### Pós-condições
+- Resultado da simulação gerado.
 
 ### Fluxo Principal
 1. Sistema processa parâmetros.
@@ -371,6 +447,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Apresentar cenário tributário.
 
+### Pré-condições
+- Simulação executada.
+
+### Pós-condições
+- Resultado exibido ao usuário.
+
 ### Fluxo Principal
 1. Sistema gera resultado.
 2. Sistema exibe informações.
@@ -389,6 +471,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Sistema
 
 **Objetivo:** Apresentar recomendações com base na simulação.
+
+### Pré-condições
+- Resultado da simulação disponível.
+
+### Pós-condições
+- Recomendações exibidas.
 
 ### Fluxo Principal
 1. Sistema analisa resultado.
@@ -409,6 +497,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Criar resumo de informações simuladas.
 
+### Pré-condições
+- Resultado da simulação disponível.
+
+### Pós-condições
+- Resumo exibido.
+
 ### Fluxo Principal
 1. Sistema organiza dados da simulação.
 2. Sistema apresenta resumo.
@@ -427,6 +521,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Contador  
 
 **Objetivo:** Consultar simulações anteriores.
+
+### Pré-condições
+- Usuário autenticado.
+
+### Pós-condições
+- Histórico exibido.
 
 ### Fluxo Principal
 1. Usuário acessa histórico.
@@ -448,6 +548,13 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 **Objetivo:** Analisar uma simulação específica.
 
+### Pré-condições
+- Histórico disponível.
+- Simulação selecionada.
+
+### Pós-condições
+- Detalhes exibidos.
+
 ### Fluxo Principal
 1. Usuário seleciona simulação.
 2. Sistema exibe detalhes.
@@ -466,6 +573,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 **Ator:** Contador  
 
 **Objetivo:** Comparar diferentes simulações.
+
+### Pré-condições
+- Múltiplas simulações disponíveis.
+
+### Pós-condições
+- Comparação exibida.
 
 ### Fluxo Principal
 1. Usuário seleciona cenários.
