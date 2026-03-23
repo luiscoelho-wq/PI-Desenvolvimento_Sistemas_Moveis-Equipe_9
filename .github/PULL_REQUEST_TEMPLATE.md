@@ -10,7 +10,3 @@ Explique o que foi alterado.
 - Closes: #XX
 - Relates to: #YY
 
-## Checklist
-- [ ] Testes adicionados
-- [ ] Documentação atualizada
-
