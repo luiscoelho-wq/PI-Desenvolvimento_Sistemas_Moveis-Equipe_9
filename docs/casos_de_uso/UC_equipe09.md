@@ -3,6 +3,40 @@
 Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**, desenvolvido como projeto integrado do módulo **Desenvolvimento de Sistemas Móveis**.
 
 ---
+# Sumário
+
+## Módulo 1 — Acesso ao Sistema
+- UC01 — Cadastrar Usuário  
+- UC02 — Realizar Login  
+- UC03 — Encerrar Sessão  
+
+## Módulo 2 — Interface e Navegação
+- UC04 — Exibir Tela Inicial  
+- UC05 — Navegar entre Telas  
+- UC06 — Atualizar Informações da Interface  
+- UC07 — Organizar Interface Visual  
+
+## Módulo 3 — Dashboard
+- UC08 — Visualizar Dashboard  
+- UC09 — Acessar Modo Estratégico  
+- UC10 — Exibir Mensagens Informativas  
+
+## Módulo 4 — Clientes
+- UC11 — Visualizar Lista de Clientes  
+- UC12 — Consultar Detalhes de Cliente  
+
+## Módulo 5 — Simulação Tributária
+- UC13 — Acessar Simulador Tributário  
+- UC14 — Inserir Dados da Simulação  
+- UC15 — Validar Dados da Simulação  
+- UC16 — Executar Simulação Tributária  
+- UC17 — Exibir Resultado da Simulação  
+- UC18 — Gerar Recomendações Estratégicas  
+- UC19 — Gerar Resumo Estratégico  
+- UC20 — Visualizar Histórico de Simulações  
+- UC21 — Visualizar Detalhes de Simulação  
+- UC22 — Comparar Cenários Tributários  
+---
 
 # Módulo 1 — Acesso ao Sistema
 
