@@ -34,6 +34,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF13 — Compatibilidade com dispositivos móveis
 
 ---
+**Descrição da Atividade:**  
+Representa o fluxo de cadastro de um novo usuário, incluindo o preenchimento dos dados e validação pelo sistema.
+
+<img width="240" height="367" alt="image" src="https://github.com/user-attachments/assets/76c81b5e-6e9f-46b2-bd0c-4a669a5742c6" />
+
+---
 
 ## Caso de Uso 02 — Realizar Login
 
@@ -71,6 +77,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF14 — Tempo de resposta das funcionalidades
 
 ---
+**Descrição da Atividade:**  
+Descreve o processo de autenticação do usuário, incluindo a validação das credenciais e tratamento de erro em caso de falha.
+
+<img width="314" height="367" alt="image" src="https://github.com/user-attachments/assets/04dd534e-e51e-42ed-b254-bd37af110be5" />
+
+---
 
 ## Caso de Uso 03 — Encerrar Sessão (Logout)
 
@@ -96,6 +108,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RF12 — Logout do sistema
 - RNF11 — Confiabilidade básica
 - RNF16 — Estabilidade da navegação
+
+---
+**Descrição da Atividade:**  
+Representa o processo de logout do usuário, finalizando a sessão e retornando à tela de login.
+
+<img width="180" height="248" alt="image" src="https://github.com/user-attachments/assets/bfb484fd-d6d1-4552-bcbd-15e535202f32" />
 
 ---
 
@@ -126,6 +144,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF08 — Padronização visual
 
 ---
+**Descrição da Atividade:**  
+Descreve o carregamento da interface principal do sistema e a exibição das funcionalidades disponíveis ao usuário.
+
+<img width="163" height="248" alt="image" src="https://github.com/user-attachments/assets/a6649c5e-4879-44bf-b593-49f0723b3540" />
+
+---
 
 ## Caso de Uso 05 — Navegar entre Telas
 
@@ -150,6 +174,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RF03 — Navegação entre telas
 - RNF03 — Desempenho
 - RNF16 — Estabilidade da navegação
+
+---
+**Descrição da Atividade:**  
+Representa a navegação do usuário entre as diferentes telas do aplicativo.
+
+<img width="227" height="193" alt="image" src="https://github.com/user-attachments/assets/13dbb033-0e46-4e7d-8de9-289f9cdd481c" />
 
 ---
 
@@ -178,6 +208,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF03 — Desempenho
 
 ---
+**Descrição da Atividade:**  
+Descreve a atualização das informações exibidas na interface após ações realizadas pelo usuário.
+
+<img width="155" height="248" alt="image" src="https://github.com/user-attachments/assets/af654231-1577-499a-974b-3d6dad2dea21" />
+
+---
 
 ## Caso de Uso 07 — Organizar Interface Visual
 
@@ -201,6 +237,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF10 — Organização visual das interfaces
 - RNF08 — Padronização visual
+
+---
+**Descrição da Atividade:**  
+Representa a aplicação do layout e a organização visual dos elementos da interface conforme o padrão definido.
+
+<img width="222" height="193" alt="image" src="https://github.com/user-attachments/assets/8195da33-9a7f-423a-a38a-460b94dd02ef" />
 
 ---
 
@@ -231,6 +273,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF03 — Desempenho
 
 ---
+**Descrição da Atividade:**  
+Descreve o carregamento e a exibição dos indicadores simulados no dashboard do sistema.
+
+<img width="191" height="193" alt="image" src="https://github.com/user-attachments/assets/5242ea4f-0ec3-4ef6-80dc-5317d59eedde" />
+
+---
 
 ## Caso de Uso 09 — Acessar Modo Estratégico
 
@@ -256,6 +304,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF03 — Desempenho
 
 ---
+**Descrição da Atividade:**  
+Representa o acesso do usuário à visualização estratégica com dados simulados.
+
+<img width="229" height="193" alt="image" src="https://github.com/user-attachments/assets/f2cf3750-6498-473f-8510-ddddf32f776c" />
+
+---
 
 ## Caso de Uso 10 — Exibir Mensagens Informativas
 
@@ -279,6 +333,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF16 — Exibição de mensagens informativas
 - RNF11 — Confiabilidade básica
+
+---
+**Descrição da Atividade:**  
+Descreve a exibição de mensagens informativas ou de erro pelo sistema.
+
+<img width="170" height="193" alt="image" src="https://github.com/user-attachments/assets/8db4ed05-30b6-41eb-a759-dca5ed03ba40" />
 
 ---
 
@@ -310,6 +370,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF03 — Desempenho
 
 ---
+**Descrição da Atividade:**  
+Representa o processo de consulta e exibição da lista de clientes simulados.
+
+<img width="176" height="248" alt="image" src="https://github.com/user-attachments/assets/190a5c58-83e1-4d6a-b496-7739acdb130a" />
+
+---
 
 ## Caso de Uso 12 — Consultar Detalhes de Cliente
 
@@ -335,6 +401,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF05 — Consulta de detalhes do cliente
 - RNF03 — Desempenho
+
+---
+**Descrição da Atividade:**  
+Descreve a visualização dos dados detalhados de um cliente selecionado.
+
+<img width="140" height="248" alt="image" src="https://github.com/user-attachments/assets/68f28efa-de6a-4289-87d6-6ed8208e6852" />
 
 ---
 
@@ -364,6 +436,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF01 — Usabilidade
 
 ---
+**Descrição da Atividade:**  
+Representa o acesso do usuário à ferramenta de simulação tributária.
+
+<img width="146" height="193" alt="image" src="https://github.com/user-attachments/assets/0eaa5598-b33d-48aa-851e-f7f356a8987d" />
+
+---
 
 ## Caso de Uso 14 — Inserir Dados da Simulação
 
@@ -388,6 +466,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF06 — Simulação tributária
 - RNF03 — Desempenho
+
+---
+**Descrição da Atividade:**  
+Descreve o processo de inserção dos dados necessários para a simulação.
+
+<img width="160" height="193" alt="image" src="https://github.com/user-attachments/assets/94bd5a31-d594-427e-84bf-1d7e34a99dc1" />
 
 ---
 
@@ -415,6 +499,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF11 — Confiabilidade básica
 
 ---
+**Descrição da Atividade:**  
+Representa a validação dos dados informados antes da execução da simulação.
+
+<img width="167" height="257" alt="image" src="https://github.com/user-attachments/assets/d63072f0-a3b2-4199-bbea-540c180fbfc6" />
+
+---
 
 ## Caso de Uso 16 — Executar Simulação Tributária
 
@@ -438,6 +528,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF06 — Simulação tributária
 - RNF03 — Desempenho
+
+---
+**Descrição da Atividade:**  
+Descreve o processamento dos dados e a geração do cenário tributário.
+
+<img width="137" height="193" alt="image" src="https://github.com/user-attachments/assets/fb89ce38-419a-45ca-80cb-2afedb60173c" />
 
 ---
 
@@ -465,6 +561,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF01 — Usabilidade
 
 ---
+**Descrição da Atividade:**  
+Representa a apresentação dos resultados da simulação ao usuário.
+
+<img width="128" height="193" alt="image" src="https://github.com/user-attachments/assets/9384e4fa-e3a2-4b45-a088-22208a673a0c" />
+
+---
 
 ## Caso de Uso 18 — Gerar Recomendações Estratégicas
 
@@ -490,6 +592,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF03 — Desempenho
 
 ---
+**Descrição da Atividade:**  
+Descreve a geração de recomendações estratégicas com base no resultado da simulação.
+
+<img width="166" height="193" alt="image" src="https://github.com/user-attachments/assets/41df8714-cffd-4cd9-b63d-31dabc6a66c5" />
+
+---
 
 ## Caso de Uso 19 — Gerar Resumo Estratégico
 
@@ -513,6 +621,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF07 — Geração de resumo
 - RNF03 — Desempenho
+
+---
+**Descrição da Atividade:**  
+Representa a criação de um resumo estratégico com base nos dados da simulação.
+
+<img width="133" height="193" alt="image" src="https://github.com/user-attachments/assets/4e1b4a8d-bb19-477c-8c2a-b865dd85ed02" />
 
 ---
 
@@ -541,6 +655,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF01 — Usabilidade
 
 ---
+**Descrição da Atividade:**  
+Descreve o acesso e a visualização das simulações realizadas anteriormente.
+
+<img width="137" height="193" alt="image" src="https://github.com/user-attachments/assets/8bbdaac3-ad72-41dc-8417-2acb2775f868" />
+
+---
 
 ## Caso de Uso 21 — Visualizar Detalhes de Simulação
 
@@ -567,6 +687,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RNF03 — Desempenho
 
 ---
+**Descrição da Atividade:**  
+Representa a visualização detalhada de uma simulação específica.
+
+<img width="162" height="193" alt="image" src="https://github.com/user-attachments/assets/4c7ed0ba-452e-4b04-a360-f9e7db59983b" />
+
+---
 
 ## Caso de Uso 22 — Comparar Cenários Tributários
 
@@ -590,6 +716,12 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 ### Requisitos Relacionados
 - RF13 — Histórico de simulações
 - RNF03 — Desempenho
+
+---
+**Descrição da Atividade:**  
+Descreve o processo de comparação entre diferentes cenários de simulação.
+
+<img width="152" height="248" alt="image" src="https://github.com/user-attachments/assets/826e7f47-113b-42c8-9774-2b5ed0175730" />
 
 ---
 
