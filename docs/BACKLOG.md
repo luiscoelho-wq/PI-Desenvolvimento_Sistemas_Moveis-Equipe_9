@@ -8,15 +8,12 @@ Este documento apresenta a organização inicial do backlog do sistema **Atlas C
 **Descrição:**  
 Permitir que o contador acesse o aplicativo de forma segura, garantindo que apenas usuários autorizados utilizem a ferramenta interna do sistema.
 
+**Status:** Em desenvolvimento
+
 ### User Stories
-- **US01 — Realizar login no sistema**  
-  *Como contador, quero realizar login no aplicativo para acessar as funcionalidades do Atlas Contábil.*
-
-- **US02 — Validação de credenciais**  
-  *Como contador, quero que o sistema valide minhas credenciais para garantir acesso seguro ao sistema.*
-
-- **US03 — Redirecionamento após login**  
-  *Como contador, quero ser direcionado ao dashboard após o login para visualizar as informações estratégicas.*
+- **US01 — Realizar login no sistema** — Em desenvolvimento  
+- **US02 — Validação de credenciais** — Em desenvolvimento  
+- **US03 — Redirecionamento após login** — Planejado  
 
 ---
 
@@ -24,15 +21,12 @@ Permitir que o contador acesse o aplicativo de forma segura, garantindo que apen
 **Descrição:**  
 Disponibilizar uma tela inicial com indicadores simulados e informações estratégicas que auxiliem o contador na visualização geral do sistema.
 
+**Status:** Em desenvolvimento
+
 ### User Stories
-- **US10 — Visualizar indicadores gerais**  
-  *Como contador, quero visualizar indicadores estratégicos simulados para compreender a situação geral da carteira de clientes.*
-
-- **US11 — Visualizar alertas importantes**  
-  *Como contador, quero visualizar alertas fiscais simulados para identificar possíveis pontos de atenção.*
-
-- **US12 — Acessar funcionalidades principais**  
-  *Como contador, quero acessar rapidamente as principais funcionalidades do aplicativo através do dashboard.*
+- **US10 — Visualizar indicadores gerais** — Em desenvolvimento  
+- **US11 — Visualizar alertas importantes** — Planejado  
+- **US12 — Acessar funcionalidades principais** — Planejado  
 
 ---  
 
@@ -40,15 +34,12 @@ Disponibilizar uma tela inicial com indicadores simulados e informações estrat
 **Descrição:**  
 Permitir que o contador realize simulações tributárias utilizando dados fictícios, possibilitando análises estratégicas e comparações de cenários contábeis.
 
+**Status:** Não iniciado
+
 ### User Stories
-- **US30 — Inserir dados para simulação**  
-  *Como contador, quero inserir dados financeiros simulados para gerar cenários tributários.*
-
-- **US31 — Gerar resultado da simulação**  
-  *Como contador, quero visualizar o resultado da simulação para compreender possíveis impactos tributários.*
-
-- **US32 — Comparar cenários simulados**  
-  *Como contador, quero comparar diferentes simulações para avaliar alternativas estratégicas.*
+- **US30 — Inserir dados para simulação** — Planejado  
+- **US31 — Gerar resultado da simulação** — Planejado  
+- **US32 — Comparar cenários simulados** — Planejado  
 
 ---
 
@@ -56,15 +47,12 @@ Permitir que o contador realize simulações tributárias utilizando dados fict�
 **Descrição:**  
 Disponibilizar ao contador a visualização de clientes simulados para análise de informações contábeis e cenários estratégicos.
 
+**Status:** Planejado
+
 ### User Stories
-- **US40 — Visualizar lista de clientes**  
-  *Como contador, quero visualizar uma lista de clientes simulados para acessar suas informações.*
-
-- **US41 — Consultar dados de um cliente**  
-  *Como contador, quero visualizar os dados detalhados de um cliente para realizar análises contábeis.*
-
-- **US42 — Navegar entre clientes**  
-  *Como contador, quero navegar entre os clientes cadastrados para comparar informações.*
+- **US40 — Visualizar lista de clientes** — Planejado  
+- **US41 — Consultar dados de um cliente** — Planejado  
+- **US42 — Navegar entre clientes** — Planejado  
 
 ---
 
@@ -72,15 +60,12 @@ Disponibilizar ao contador a visualização de clientes simulados para análise 
 **Descrição:**  
 Permitir que o usuário acompanhe e revise simulações tributárias realizadas anteriormente.
 
+**Status:** Não iniciado
+
 ### User Stories
-- **US50 — Registrar simulações realizadas**  
-  *Como contador, quero que o sistema registre as simulações realizadas para poder consultá-las posteriormente.*
-
-- **US51 — Visualizar histórico de simulações**  
-  *Como contador, quero visualizar minhas simulações anteriores para analisar decisões passadas.*
-
-- **US52 — Acessar detalhes de simulação**  
-  *Como contador, quero acessar detalhes de uma simulação específica para revisar os dados utilizados.*
+- **US50 — Registrar simulações realizadas** — Planejado  
+- **US51 — Visualizar histórico de simulações** — Planejado  
+- **US52 — Acessar detalhes de simulação** — Planejado  
 
 ---
 
@@ -88,47 +73,44 @@ Permitir que o usuário acompanhe e revise simulações tributárias realizadas 
 **Descrição:**  
 Garantir que o aplicativo possua uma navegação clara e organizada entre as telas, proporcionando uma boa experiência ao usuário.
 
+**Status:** Em desenvolvimento
+
 ### User Stories
-- **US60 — Navegar entre telas do aplicativo**  
-  *Como contador, quero navegar facilmente entre as telas do sistema para acessar as funcionalidades.*
-
-- **US61 — Interface responsiva**  
-  *Como contador, quero que a interface se adapte ao dispositivo para facilitar a utilização do aplicativo.*
-
-- **US62 — Organização visual das informações**  
-  *Como contador, quero que as informações sejam exibidas de forma clara e organizada para facilitar a leitura.*
+- **US60 — Navegar entre telas do aplicativo** — Em desenvolvimento  
+- **US61 — Interface responsiva** — Planejado  
+- **US62 — Organização visual das informações** — Planejado  
 
 ---
 
 # Observações Atualizadas
-- O backlog foi expandido para cobrir **todas as funcionalidades principais do Atlas Contábil**.
-- Cada épico representa um **módulo funcional do aplicativo**.
-- As user stories orientam a implementação gradual do sistema.
+- O backlog cobre todas as funcionalidades principais do Atlas Contábil.
+- Os épicos representam os módulos do sistema, alinhados com os casos de uso.
+- O projeto já iniciou o desenvolvimento das telas principais:
+  - Login
+  - Cadastro
+  - Dashboard
+- As funcionalidades estão sendo implementadas de forma incremental, conforme o escopo do MVP.
 
 ---
 
 # Próximos Passos Atualizados
 
-Com base no **cronograma da disciplina**, as próximas etapas serão:
+1. Finalizar desenvolvimento das telas:
+   - Login  
+   - Cadastro  
+   - Dashboard  
 
-1. **Priorizar as histórias mais importantes para o MVP**, como:
-   - Login do usuário
-   - Dashboard inicial
-   - Simulação de cenários
+2. Implementar navegação completa entre telas
 
-2. **Finalizar a modelagem do sistema**, incluindo:
-   - árvore completa de widgets
-   - fluxo de navegação entre telas
-   - organização da interface do aplicativo
+3. Iniciar desenvolvimento do simulador tributário
 
-3. **Desenvolver as telas principais no Flutter**:
-   - tela de login  
-   - dashboard  
-   - tela de simulação tributária
+4. Integrar dados simulados às interfaces
 
-4. **Implementar navegação entre telas** e estrutura básica do aplicativo.
+5. Implementar funcionalidades do histórico de simulações
 
-5. **Manter o repositório GitHub atualizado**, registrando:
-   - documentação
-   - código-fonte
-   - evolução do projeto.
+6. Evoluir interface e usabilidade do aplicativo
+
+7. Manter o repositório GitHub atualizado com:
+   - documentação  
+   - código-fonte  
+   - evolução do projeto  
