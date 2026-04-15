@@ -47,3 +47,28 @@ O sistema deve apresentar recomendações automáticas com base nos dados e ativ
 
 ### RF16 — Exibição de mensagens informativas do sistema
 O sistema deve exibir mensagens informativas ou alertas durante a utilização da aplicação, como erros de preenchimento, sucesso de operações ou avisos de funcionamento.
+
+### RF17 — Visualização de tarefas por data  
+O sistema deve permitir a exibição de tarefas organizadas conforme a data selecionada no calendário.  
+
+### RF18 — Atualização de status de tarefas  
+O sistema deve permitir que o usuário altere o status de uma tarefa (pendente/concluída).  
+
+### RF19 — Priorização automática de tarefas  
+O sistema deve identificar e organizar tarefas com base na urgência e prazos.  
+
+### RF20 — Geração de resumo diário  
+O sistema deve gerar automaticamente um resumo das atividades do dia. 
+
+### RF21 — Detalhamento de insights  
+O sistema deve permitir a visualização detalhada dos insights gerados. 
+
+### RF22 — Filtro de tarefas por período  
+O sistema deve permitir filtrar tarefas por diferentes períodos (dia, semana, mês).  
+
+### RF23 — Resumo por período  
+O sistema deve gerar resumos com base no período selecionado.  
+
+### RF24 — Destaque de tarefas urgentes  
+O sistema deve destacar visualmente tarefas consideradas urgentes.
+
