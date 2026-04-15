@@ -40,11 +40,10 @@ Este diagrama representa o gerenciamento de clientes simulados. Permite visualiz
 
 ---
 
-## Módulo 5 — Simulação Tributária
+## Módulo 5 — Análise e Histórico Estratégico
 
-Este diagrama apresenta as funcionalidades relacionadas à simulação tributária. Inclui desde o acesso ao simulador, inserção e validação de dados, até a execução da simulação, visualização de resultados e análise de cenários.
+Este diagrama apresenta as funcionalidades relacionadas à análise de informações do sistema. Inclui a visualização do histórico de registros, consulta de detalhes, geração de recomendações estratégicas e exibição de resumos com base nos dados disponíveis, permitindo ao usuário interpretar informações e apoiar a tomada de decisão dentro do aplicativo.
 
-<img width="382" height="940" alt="image" src="https://github.com/user-attachments/assets/639f8998-9110-423c-9f18-d029c80a4fbb" />
-
+<img width="636" height="650" alt="image" src="https://github.com/user-attachments/assets/5d222564-fab6-46de-9ce3-6481bc1567fb" />
 
 ---
