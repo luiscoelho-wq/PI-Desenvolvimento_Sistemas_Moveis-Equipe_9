@@ -7,7 +7,7 @@
 
 O **Atlas Contábil** é um aplicativo mobile desenvolvido em **Flutter** como parte do **Projeto Integrado do módulo Desenvolvimento de Sistemas Móveis**, elaborado por alunos do curso de **Ciências da Computação** com o objetivo de aplicar, na prática, conceitos de **engenharia de software, desenvolvimento mobile e organização de sistemas digitais**.
 
-O projeto propõe a criação de uma ferramenta conceitual voltada ao apoio estratégico de escritórios de contabilidade, auxiliando profissionais na **visualização de informações simuladas, organização de clientes e análise de cenários tributários**.
+O projeto propõe a criação de uma ferramenta conceitual voltada ao apoio estratégico de escritórios de contabilidade, auxiliando profissionais na **organização de tarefas, gestão de clientes e visualização de insights inteligentes baseados em dados simulados**.
 
 A aplicação possui **caráter acadêmico**, utilizando apenas **dados fictícios**, não sendo destinada ao uso comercial ou à manipulação de dados reais. O sistema funciona como um **protótipo funcional de uma solução tecnológica aplicada ao contexto contábil**.
 
@@ -33,24 +33,24 @@ O projeto simula um **cenário real de desenvolvimento profissional**, permitind
 Profissionais da área contábil lidam diariamente com:
 
 - Grande volume de clientes e informações fiscais;
-- Diversidade de regimes tributários;
-- Necessidade de analisar diferentes cenários financeiros;
-- Dificuldade em visualizar informações estratégicas de forma centralizada.
+- Organização de tarefas e prazos;
+- Necessidade de acompanhar obrigações tributárias;
+- Dificuldade em visualizar informações relevantes de forma centralizada.
 
-Em muitos casos, essas atividades são realizadas utilizando **planilhas ou sistemas fragmentados**, o que pode dificultar a visualização estratégica das informações e tornar o processo de análise mais demorado.
+Em muitos casos, essas atividades são realizadas utilizando **planilhas ou sistemas fragmentados**, o que pode dificultar a organização e tornar o processo de gestão menos eficiente.
 
 ---
 
 ## 4. Proposta de Solução
 
-O **Atlas Contábil** propõe a criação de um aplicativo mobile que permita ao usuário visualizar informações contábeis simuladas e realizar análises estratégicas básicas por meio de funcionalidades como:
+O **Atlas Contábil** propõe a criação de um aplicativo mobile que permita ao usuário organizar suas atividades e visualizar informações relevantes por meio de funcionalidades como:
 
-- **Dashboard com indicadores simulados**
-- **Visualização de clientes fictícios**
-- **Simulação de cenários tributários**
-- **Histórico de simulações realizadas**
+- **Sistema de autenticação de usuários (contador)**
+- **Dashboard com calendário e tarefas**
+- **Insights inteligentes gerados por IA com base em dados simulados**
+- **Gestão de clientes e histórico de informações**
 
-A aplicação tem como objetivo demonstrar, em ambiente acadêmico, como uma ferramenta digital pode auxiliar profissionais contábeis na **organização e análise de informações estratégicas**.
+A aplicação tem como objetivo demonstrar, em ambiente acadêmico, como uma ferramenta digital pode auxiliar profissionais contábeis na **organização, acompanhamento de prazos e apoio à tomada de decisão**.
 
 Todas as informações utilizadas no sistema são **simuladas**, garantindo adequação ao contexto educacional.
 
@@ -72,14 +72,15 @@ No contexto atual, o sistema é utilizado exclusivamente como **protótipo acad�
 
 ### 6.1 Objetivo Geral
 
-Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modernas podem auxiliar o profissional contábil na **visualização e análise estratégica de informações simuladas**.
+Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modernas podem auxiliar o profissional contábil na **organização de tarefas, gestão de clientes e visualização de insights inteligentes com base em dados simulados**.
 
 ### 6.2 Objetivos Específicos
 
-- Centralizar informações contábeis simuladas em um único ambiente digital.
-- Demonstrar a utilização de dashboards para visualização de dados estratégicos.
-- Permitir simulações tributárias em ambiente educacional.
-- Simular a organização de informações de clientes em um sistema digital.
+- Centralizar informações em um único ambiente digital.
+- Demonstrar o uso de **calendários e tarefas** na organização profissional.
+- Implementar geração de **insights inteligentes com apoio de IA**.
+- Permitir o cadastro e consulta de clientes simulados.
+- Registrar e consultar histórico de informações dos clientes.
 - Aplicar conceitos de **desenvolvimento mobile utilizando Flutter**.
 - Demonstrar na prática o processo de desenvolvimento de software em um projeto acadêmico.
 
@@ -89,43 +90,55 @@ Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modern
 
 ### 7.1 Autenticação de Usuário
 
-- Login no sistema  
+- Login do contador  
+- Cadastro de conta  
 - Validação de credenciais  
-- Acesso restrito ao ambiente do aplicativo  
+- Acesso restrito ao sistema  
 
-### 7.2 Dashboard Estratégico
+---
 
-- Indicadores gerais simulados  
-- Alertas fiscais simulados  
-- Visualização geral de informações  
+### 7.2 Painel com Calendário e Tarefas
 
-### 7.3 Gestão de Clientes Simulados
+- Visualização de calendário mensal  
+- Organização de tarefas por data  
+- Listagem de atividades do dia  
+- Acompanhamento de prazos  
 
-- Lista de clientes fictícios  
-- Visualização de informações básicas  
-- Consulta de dados simulados  
+---
 
-### 7.4 Simulador de Cenários Tributários
+### 7.3 Insights Inteligentes
 
-- Inserção de dados financeiros simulados  
-- Geração de cenários tributários  
-- Visualização dos resultados da simulação  
+- Geração de insights com base em dados simulados  
+- Alertas de prazos e obrigações  
+- Recomendações automáticas para o usuário  
+- Indicação de prioridades  
 
-### 7.5 Histórico de Simulações
+---
 
-- Registro das simulações realizadas  
-- Consulta de cenários anteriores  
-- Análise comparativa de simulações  
+### 7.4 Gestão de Clientes
+
+- Cadastro de clientes fictícios  
+- Listagem de clientes  
+- Consulta de informações básicas  
+- Visualização de histórico do cliente  
+
+---
+
+### 7.5 Histórico de Informações
+
+- Registro de dados relacionados aos clientes  
+- Consulta de histórico individual  
+- Acompanhamento de atividades anteriores  
 
 ---
 
 ## 8. Diferenciais do Produto
 
+- Integração de **organização de tarefas e gestão de clientes**.
+- Uso de **insights inteligentes baseados em IA**.
+- Foco na **produtividade do contador**.
 - Desenvolvido como **experiência prática de aprendizado**.
-- Simulação de ferramenta profissional aplicada ao contexto contábil.
-- Foco na **visualização estratégica de informações**.
 - Estrutura baseada em boas práticas de engenharia de software.
-- Aplicação prática dos conceitos aprendidos no módulo.
 
 ---
 
@@ -134,10 +147,13 @@ Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modern
 ### Incluído no Escopo
 
 - Desenvolvimento mobile utilizando **Flutter**;
-- Interface navegável entre telas;
-- Dados fictícios para simulação de cenários;
-- Dashboard com indicadores simulados;
-- Simulador de cenários tributários.
+- Sistema de autenticação (login e cadastro);
+- Interface com calendário e tarefas;
+- Geração de insights inteligentes (simulados);
+- Cadastro e gerenciamento de clientes;
+- Visualização de histórico de informações.
+
+---
 
 ### Fora do Escopo
 
@@ -170,7 +186,9 @@ Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modern
 O projeto será considerado bem-sucedido se:
 
 - O aplicativo apresentar **navegação funcional entre as telas**;
-- As interfaces estiverem organizadas e coerentes;
-- As funcionalidades principais forem demonstráveis;
+- O sistema de login e cadastro estiver funcional;
+- O calendário e as tarefas estiverem operacionais;
+- Os insights inteligentes forem exibidos corretamente;
+- A gestão de clientes funcionar conforme esperado;
 - A documentação do projeto estiver completa;
 - O projeto demonstrar aplicação prática dos conceitos estudados no módulo.
