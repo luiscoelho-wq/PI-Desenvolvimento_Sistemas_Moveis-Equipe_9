@@ -15,14 +15,14 @@ O sistema deve permitir a visualização de clientes fictícios cadastrados para
 ### RF05 — Consulta de detalhes do cliente
 O sistema deve exibir informações estratégicas simuladas ao selecionar um cliente da lista.
 
-### RF06 — Simulação básica de cenário tributário
-O sistema deve permitir a alteração de parâmetros simulados para visualização de cenários tributários educacionais.
+### RF06 — Visualização de calendário e tarefas
+O sistema deve permitir a visualização de um calendário contendo tarefas organizadas por data para acompanhamento de prazos.
 
-### RF07 — Geração de resumo para reunião
-O sistema deve permitir a visualização de um resumo estratégico baseado em dados simulados.
+### RF07 — Visualização de insights inteligentes
+O sistema deve permitir a exibição de insights inteligentes gerados com base em dados simulados, auxiliando na tomada de decisão.
 
-### RF08 — Acesso ao modo estratégico
-O sistema deve apresentar uma visão geral simulada da carteira de clientes.
+### RF08 — Acesso ao painel inteligente
+O sistema deve apresentar uma visão geral contendo calendário, tarefas e insights relevantes ao usuário.
 
 ### RF09 — Atualização visual das informações
 O sistema deve atualizar os dados exibidos conforme interações realizadas pelo usuário.
@@ -36,14 +36,14 @@ O sistema deve permitir que um novo usuário realize cadastro informando dados b
 ### RF12 — Logout do sistema
 O sistema deve permitir que o usuário encerre sua sessão atual, retornando à tela de login do aplicativo.
 
-### RF13 — Histórico de simulações
-O sistema deve permitir que o usuário visualize uma lista contendo simulações tributárias realizadas anteriormente.
+### RF13 — Histórico de informações de clientes
+O sistema deve permitir que o usuário visualize um histórico de informações relacionadas aos clientes cadastrados.
 
-### RF14 — Visualização detalhada de simulação
-O sistema deve permitir que o usuário selecione uma simulação realizada anteriormente para visualizar seus detalhes e parâmetros utilizados.
+### RF14 — Visualização detalhada do cliente
+O sistema deve permitir que o usuário selecione um cliente para visualizar seus dados e histórico detalhado.
 
-### RF15 — Recomendações estratégicas simuladas
-O sistema deve apresentar recomendações estratégicas simuladas com base nos resultados gerados pela simulação tributária.
+### RF15 — Recomendações inteligentes
+O sistema deve apresentar recomendações automáticas com base nos dados e atividades registradas no sistema.
 
 ### RF16 — Exibição de mensagens informativas do sistema
 O sistema deve exibir mensagens informativas ou alertas durante a utilização da aplicação, como erros de preenchimento, sucesso de operações ou avisos de funcionamento.
