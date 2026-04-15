@@ -25,17 +25,16 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - UC11 — Visualizar Lista de Clientes  
 - UC12 — Consultar Detalhes de Cliente  
 
-## Módulo 5 — Simulação Tributária
-- UC13 — Acessar Simulador Tributário  
-- UC14 — Inserir Dados da Simulação  
-- UC15 — Validar Dados da Simulação  
-- UC16 — Executar Simulação Tributária  
-- UC17 — Exibir Resultado da Simulação  
-- UC18 — Gerar Recomendações Estratégicas  
-- UC19 — Gerar Resumo Estratégico  
-- UC20 — Visualizar Histórico de Simulações  
-- UC21 — Visualizar Detalhes de Simulação  
-- UC22 — Comparar Cenários Tributários  
+## Módulo 5 — Gestão Inteligente de Tarefas
+- UC13 — Visualizar Tarefas do Dia  
+- UC14 — Marcar Tarefa como Concluída  
+- UC15 — Priorizar Tarefas  
+- UC16 — Gerar Insights Inteligentes  
+- UC17 — Gerar Resumo do Dia  
+- UC18 — Visualizar Insights Detalhados  
+- UC19 — Filtrar Tarefas por Período  
+- UC20 — Visualizar Resumo por Período  
+- UC21 — Destacar Tarefas Urgentes  
 ---
 
 # Módulo 1 — Acesso ao Sistema
@@ -444,318 +443,308 @@ Descreve a visualização dos dados detalhados de um cliente selecionado.
 
 ---
 
-# Módulo 5 — Simulação Tributária
+# Módulo 5 — Gestão Inteligente de Tarefas
 
-## Caso de Uso 13 — Acessar Simulador Tributário
+## Caso de Uso 13 — Visualizar Tarefas do Dia
 
-**Ator:** Contador  
+**Ator:** Usuário  
 
-**Objetivo:** Permitir acesso à ferramenta de simulação.
+**Objetivo:** Permitir que o usuário visualize as tarefas do dia atual.
 
 ### Pré-condições
 - Usuário autenticado.
 
 ### Pós-condições
-- Interface do simulador exibida.
+- Lista de tarefas exibida.
 
 ### Fluxo Principal
-1. Usuário acessa simulador.
-2. Sistema abre interface.
+1. Usuário acessa a tela inicial.
+2. Sistema identifica a data atual.
+3. Sistema carrega tarefas do dia.
+4. Sistema exibe lista de tarefas.
 
 ### Regras de Negócio
-- RN02 — Simulações não possuem valor legal.
+- --
 
 ### Requisitos Relacionados
-- RF06 — Simulação básica de cenário tributário
-- RNF01 — Usabilidade
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Representa o acesso do usuário à ferramenta de simulação tributária.
+Representa a exibição das tarefas diárias organizadas para o usuário.
 
-<img width="146" height="193" alt="image" src="https://github.com/user-attachments/assets/0eaa5598-b33d-48aa-851e-f7f356a8987d" />
+<img width="207" height="303" alt="image" src="https://github.com/user-attachments/assets/cf1391f7-1cca-4a70-bee0-79d3ad8566f5" />
 
 ---
 
-## Caso de Uso 14 — Inserir Dados da Simulação
+## Caso de Uso 14 — Marcar Tarefa como Concluída
 
-**Ator:** Contador  
+**Ator:** Usuário  
 
-**Objetivo:** Informar parâmetros da simulação.
+**Objetivo:** Permitir que o usuário atualize o status das tarefas.
 
 ### Pré-condições
-- Simulador aberto.
+- Tarefa disponível na lista.
 
 ### Pós-condições
-- Dados da simulação registrados.
+- Tarefa marcada como concluída.
 
 ### Fluxo Principal
-1. Usuário informa dados fiscais.
-2. Sistema registra parâmetros.
+1. Usuário seleciona uma tarefa.
+2. Usuário marca como concluída.
+3. Sistema atualiza o status.
+4. Interface é atualizada.
 
 ### Regras de Negócio
-- RN03 — Dados obrigatórios para simulação
-- RN05 — Atualização manual dos dados
+- --
 
 ### Requisitos Relacionados
-- RF06 — Simulação tributária
-- RNF03 — Desempenho
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Descreve o processo de inserção dos dados necessários para a simulação.
+Representa a atualização do status de uma tarefa pelo usuário.
 
-<img width="160" height="193" alt="image" src="https://github.com/user-attachments/assets/94bd5a31-d594-427e-84bf-1d7e34a99dc1" />
+<img width="214" height="303" alt="image" src="https://github.com/user-attachments/assets/5b35d950-163d-4d44-9762-9afd8ad39906" />
 
 ---
 
-## Caso de Uso 15 — Validar Dados da Simulação
+## Caso de Uso 15 — Priorizar Tarefas
 
-**Ator:** Sistema
+**Ator:** Sistema  
 
-**Objetivo:** Garantir consistência dos dados.
+**Objetivo:** Identificar automaticamente tarefas mais urgentes.
 
 ### Pré-condições
-- Dados informados pelo usuário.
+- Tarefas disponíveis.
 
 ### Pós-condições
-- Dados validados.
+- Tarefas organizadas por prioridade.
 
 ### Fluxo Principal
-1. Sistema verifica dados informados.
-2. Sistema confirma validade.
+1. Sistema analisa prazos das tarefas.
+2. Sistema identifica tarefas urgentes.
+3. Sistema destaca tarefas prioritárias.
 
 ### Regras de Negócio
-- RN03 — Dados obrigatórios para simulação
+- --
 
 ### Requisitos Relacionados
-- RF06 — Simulação tributária
-- RNF11 — Confiabilidade básica
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Representa a validação dos dados informados antes da execução da simulação.
+Representa a priorização automática das tarefas com base na urgência.
 
-<img width="167" height="257" alt="image" src="https://github.com/user-attachments/assets/d63072f0-a3b2-4199-bbea-540c180fbfc6" />
+<img width="237" height="303" alt="image" src="https://github.com/user-attachments/assets/191955e5-ab17-4813-9f03-a29dfd545dc0" />
 
 ---
 
-## Caso de Uso 16 — Executar Simulação Tributária
+## Caso de Uso 16 — Gerar Insights Inteligentes
 
-**Ator:** Sistema
+**Ator:** Sistema  
 
-**Objetivo:** Processar dados e gerar cenário.
+**Objetivo:** Gerar recomendações com base nas tarefas do usuário.
 
 ### Pré-condições
-- Dados validados.
+- Tarefas disponíveis.
 
 ### Pós-condições
-- Resultado da simulação gerado.
+- Insights exibidos.
 
 ### Fluxo Principal
-1. Sistema processa parâmetros.
-2. Calcula resultado.
+1. Sistema analisa tarefas do usuário.
+2. Sistema identifica padrões e prazos.
+3. Sistema gera insights.
+4. Sistema exibe recomendações.
 
 ### Regras de Negócio
-- RN02 — Simulações não possuem valor legal.
+- --
 
 ### Requisitos Relacionados
-- RF06 — Simulação tributária
-- RNF03 — Desempenho
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Descreve o processamento dos dados e a geração do cenário tributário.
+Representa a geração de recomendações automáticas com base nas tarefas.
 
-<img width="137" height="193" alt="image" src="https://github.com/user-attachments/assets/fb89ce38-419a-45ca-80cb-2afedb60173c" />
+<img width="213" height="303" alt="image" src="https://github.com/user-attachments/assets/ddc9b371-9782-4847-8f21-d3249a73f9d1" />
 
 ---
 
-## Caso de Uso 17 — Exibir Resultado da Simulação
+## Caso de Uso 17 — Gerar Resumo do Dia
 
-**Ator:** Sistema
+**Ator:** Sistema  
 
-**Objetivo:** Apresentar cenário tributário.
+**Objetivo:** Apresentar um resumo das atividades do dia.
 
 ### Pré-condições
-- Simulação executada.
-
-### Pós-condições
-- Resultado exibido ao usuário.
-
-### Fluxo Principal
-1. Sistema gera resultado.
-2. Sistema exibe informações.
-
-### Regras de Negócio
-- RN02 — Simulações não possuem valor legal.
-
-### Requisitos Relacionados
-- RF06 — Simulação tributária
-- RNF01 — Usabilidade
-
----
-**Descrição da Atividade:**  
-Representa a apresentação dos resultados da simulação ao usuário.
-
-<img width="128" height="193" alt="image" src="https://github.com/user-attachments/assets/9384e4fa-e3a2-4b45-a088-22208a673a0c" />
-
----
-
-## Caso de Uso 18 — Gerar Recomendações Estratégicas
-
-**Ator:** Sistema
-
-**Objetivo:** Apresentar recomendações com base na simulação.
-
-### Pré-condições
-- Resultado da simulação disponível.
-
-### Pós-condições
-- Recomendações exibidas.
-
-### Fluxo Principal
-1. Sistema analisa resultado.
-2. Sistema apresenta recomendações.
-
-### Regras de Negócio
-- RN07 — Orientações baseadas nos dados informados.
-
-### Requisitos Relacionados
-- RF15 — Recomendações estratégicas simuladas
-- RNF03 — Desempenho
-
----
-**Descrição da Atividade:**  
-Descreve a geração de recomendações estratégicas com base no resultado da simulação.
-
-<img width="166" height="193" alt="image" src="https://github.com/user-attachments/assets/41df8714-cffd-4cd9-b63d-31dabc6a66c5" />
-
----
-
-## Caso de Uso 19 — Gerar Resumo Estratégico
-
-**Ator:** Sistema
-
-**Objetivo:** Criar resumo de informações simuladas.
-
-### Pré-condições
-- Resultado da simulação disponível.
+- Tarefas disponíveis.
 
 ### Pós-condições
 - Resumo exibido.
 
 ### Fluxo Principal
-1. Sistema organiza dados da simulação.
-2. Sistema apresenta resumo.
+1. Sistema coleta dados das tarefas.
+2. Sistema organiza informações.
+3. Sistema gera resumo do dia.
+4. Sistema exibe resumo.
 
 ### Regras de Negócio
-- RN02 — Simulações não possuem valor legal.
+- --
 
 ### Requisitos Relacionados
-- RF07 — Geração de resumo
-- RNF03 — Desempenho
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Representa a criação de um resumo estratégico com base nos dados da simulação.
+Representa a geração de um resumo diário das atividades.
 
-<img width="133" height="193" alt="image" src="https://github.com/user-attachments/assets/4e1b4a8d-bb19-477c-8c2a-b865dd85ed02" />
+<img width="227" height="303" alt="image" src="https://github.com/user-attachments/assets/e9f55f73-4b80-4159-97b8-604111f06988" />
 
 ---
 
-## Caso de Uso 20 — Visualizar Histórico de Simulações
+## Caso de Uso 18 — Visualizar Insights Detalhados
 
-**Ator:** Contador  
+**Ator:** Usuário  
 
-**Objetivo:** Consultar simulações anteriores.
+**Objetivo:** Permitir acesso completo às recomendações geradas.
 
 ### Pré-condições
-- Usuário autenticado.
+- Insights disponíveis.
 
 ### Pós-condições
-- Histórico exibido.
+- Detalhamento exibido.
 
 ### Fluxo Principal
-1. Usuário acessa histórico.
-2. Sistema apresenta lista.
+1. Usuário seleciona “ver mais”.
+2. Sistema carrega detalhes.
+3. Sistema exibe recomendações completas.
 
 ### Regras de Negócio
-- RN04 — Histórico de simulações
-- RN06 — Organização por cenários
+- --
 
 ### Requisitos Relacionados
-- RF13 — Histórico de simulações
-- RNF01 — Usabilidade
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Descreve o acesso e a visualização das simulações realizadas anteriormente.
+Representa a visualização detalhada dos insights gerados pelo sistema.
 
-<img width="137" height="193" alt="image" src="https://github.com/user-attachments/assets/8bbdaac3-ad72-41dc-8417-2acb2775f868" />
+<img width="253" height="248" alt="image" src="https://github.com/user-attachments/assets/bde1c67a-685b-452d-8fb3-a54bdf41345a" />
 
 ---
 
-## Caso de Uso 21 — Visualizar Detalhes de Simulação
+## Caso de Uso 19 — Filtrar Tarefas por Período
 
-**Ator:** Contador  
+**Ator:** Usuário  
 
-**Objetivo:** Analisar uma simulação específica.
+**Objetivo:** Permitir que o usuário visualize tarefas por período (diário, semanal ou mensal).
 
 ### Pré-condições
-- Histórico disponível.
-- Simulação selecionada.
+- Tarefas disponíveis.
 
 ### Pós-condições
-- Detalhes exibidos.
+- Tarefas filtradas exibidas.
 
 ### Fluxo Principal
-1. Usuário seleciona simulação.
-2. Sistema exibe detalhes.
+1. Usuário seleciona tipo de visualização.
+2. Sistema identifica o período.
+3. Sistema filtra tarefas.
+4. Sistema atualiza a interface.
 
 ### Regras de Negócio
-- RN04 — Histórico de simulações
+- --
 
 ### Requisitos Relacionados
-- RF14 — Visualização detalhada de simulação
-- RNF03 — Desempenho
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Representa a visualização detalhada de uma simulação específica.
+Representa a filtragem de tarefas com base no período selecionado pelo usuário.
 
-<img width="162" height="193" alt="image" src="https://github.com/user-attachments/assets/4c7ed0ba-452e-4b04-a360-f9e7db59983b" />
+<img width="208" height="303" alt="image" src="https://github.com/user-attachments/assets/464a74d1-c805-4e02-b05f-fbaa24e9c4cb" />
 
 ---
 
-## Caso de Uso 22 — Comparar Cenários Tributários
+## Caso de Uso 20 — Visualizar Resumo por Período
 
-**Ator:** Contador  
+**Ator:** Sistema  
 
-**Objetivo:** Comparar diferentes simulações.
+**Objetivo:** Exibir resumo com base no período selecionado.
 
 ### Pré-condições
-- Múltiplas simulações disponíveis.
+- Período selecionado.
 
 ### Pós-condições
-- Comparação exibida.
+- Resumo atualizado exibido.
 
 ### Fluxo Principal
-1. Usuário seleciona cenários.
-2. Sistema apresenta comparação.
+1. Sistema identifica o período ativo.
+2. Sistema coleta dados das tarefas.
+3. Sistema gera resumo.
+4. Sistema exibe informações.
 
 ### Regras de Negócio
-- RN06 — Organização por cenários
+- --
 
 ### Requisitos Relacionados
-- RF13 — Histórico de simulações
-- RNF03 — Desempenho
+- --
+- --
+- --
 
 ---
 **Descrição da Atividade:**  
-Descreve o processo de comparação entre diferentes cenários de simulação.
+Representa a atualização do resumo com base no período escolhido pelo usuário.
 
-<img width="152" height="248" alt="image" src="https://github.com/user-attachments/assets/826e7f47-113b-42c8-9774-2b5ed0175730" />
+<img width="188" height="303" alt="image" src="https://github.com/user-attachments/assets/4181eca2-7c39-41a2-969b-7dbb531e0db3" />
+
+---
+
+## Caso de Uso 21 — Destacar Tarefas Urgentes
+
+**Ator:** Sistema  
+
+**Objetivo:** Evidenciar tarefas com maior prioridade.
+
+### Pré-condições
+- Tarefas cadastradas.
+
+### Pós-condições
+- Tarefas urgentes destacadas.
+
+### Fluxo Principal
+1. Sistema analisa prazos.
+2. Sistema identifica urgência.
+3. Sistema aplica destaque visual.
+
+### Regras de Negócio
+- --
+
+### Requisitos Relacionados
+- --
+- --
+- --
+
+---
+**Descrição da Atividade:**  
+Representa a identificação e o destaque de tarefas prioritárias.
+
+<img width="214" height="303" alt="image" src="https://github.com/user-attachments/assets/35d61306-6712-455b-8c00-1dfc371fd7ce" />
 
 ---
 
@@ -773,11 +762,10 @@ Essas funcionalidades compõem o **MVP (Minimum Viable Product)** do projeto.
 - **UC08 — Visualizar Dashboard**
 - **UC11 — Visualizar Lista de Clientes**
 - **UC12 — Consultar Detalhes de Cliente**
-- **UC13 — Acessar Simulador Tributário**
-- **UC14 — Inserir Dados da Simulação**
-- **UC15 — Validar Dados da Simulação**
-- **UC16 — Executar Simulação Tributária**
-- **UC17 — Exibir Resultado da Simulação**
+- **UC13 — Visualizar Tarefas do Dia**
+- **UC14 — Marcar Tarefa como Concluída**
+- **UC16 — Gerar Insights Inteligentes**
+- **UC17 — Gerar Resumo do Dia**
 
 ## Objetivo do MVP
 
@@ -786,7 +774,5 @@ O MVP permite demonstrar o fluxo principal do sistema:
 1. O usuário realiza login no aplicativo.
 2. O sistema apresenta o dashboard com indicadores simulados.
 3. O usuário pode acessar a lista de clientes simulados.
-4. O usuário pode realizar uma simulação tributária.
-5. O sistema apresenta o resultado da simulação.
-
-Com esse conjunto de funcionalidades, já é possível demonstrar o funcionamento central do **Atlas Contábil**.
+4. O usuário visualiza e gerencia suas tarefas do dia.
+5. O sistema gera insights e apresenta um resumo inteligente das atividades.
