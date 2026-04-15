@@ -40,7 +40,7 @@ As funcionalidades implementadas devem respeitar os limites definidos no escopo 
 O aplicativo deve ser executado corretamente em dispositivos móveis compatíveis com versões recentes do sistema operacional Android.
 
 ### RNF14 — Tempo de resposta das funcionalidades
-As funcionalidades principais do sistema (login, navegação entre telas e simulações) devem apresentar resposta em tempo adequado, garantindo uma experiência fluida ao usuário.
+As funcionalidades principais do sistema (login, navegação entre telas e insights inteligentes) devem apresentar resposta em tempo adequado, garantindo uma experiência fluida ao usuário.
 
 ### RNF15 — Organização modular do projeto
 O projeto deve ser estruturado em módulos ou camadas que separem componentes de interface, lógica de aplicação e manipulação de dados, facilitando manutenção e evolução do sistema.
