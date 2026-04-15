@@ -43,9 +43,9 @@ Representa o acesso à lista de clientes e a visualização dos detalhes de um c
 ## Módulo 5 — Simulação Tributária
 
 ### Descrição
-Representa o fluxo completo da simulação tributária, desde a inserção dos dados até a geração e exibição dos resultados.
+Representa o fluxo principal do módulo, incluindo a visualização das tarefas do dia, atualização de status pelo usuário e a geração automática de insights e resumos pelo sistema.
 
-[cole a foto aqui]
+<img width="515" height="661" alt="image" src="https://github.com/user-attachments/assets/f8026798-000e-4216-ac62-7f9657454624" />
 
 ---
 
