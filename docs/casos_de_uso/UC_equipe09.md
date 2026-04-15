@@ -294,22 +294,23 @@ Representa a aplicação do layout e a organização visual dos elementos da int
 - Dashboard exibido.
 
 ### Fluxo Principal
-1. Sistema carrega dados simulados.
+1. Sistema carrega dados.
 2. Sistema apresenta indicadores.
 
 ### Regras de Negócio
-- RN02 — Simulações não possuem valor legal.
-
+- RN02 — Informações possuem caráter informativo
+  
 ### Requisitos Relacionados
 - RF02 — Visualização do Dashboard
+- RF09 — Atualização visual das informações
 - RNF01 — Usabilidade
 - RNF03 — Desempenho
 
 ---
 **Descrição da Atividade:**  
-Descreve o carregamento e a exibição dos indicadores simulados no dashboard do sistema.
+Descreve o carregamento e a exibição dos indicadores no dashboard do sistema.
 
-<img width="191" height="193" alt="image" src="https://github.com/user-attachments/assets/5242ea4f-0ec3-4ef6-80dc-5317d59eedde" />
+<img width="193" height="248" alt="image" src="https://github.com/user-attachments/assets/ef5a3b14-cda8-4cb7-9bb8-472b5944e3e7" />
 
 ---
 
@@ -327,20 +328,22 @@ Descreve o carregamento e a exibição dos indicadores simulados no dashboard do
 
 ### Fluxo Principal
 1. Usuário acessa modo estratégico.
-2. Sistema apresenta dados simulados.
+2. Sistema apresenta dados.
 
 ### Regras de Negócio
-- RN02 — Simulações não possuem valor legal.
+- RN02 — Informações possuem caráter informativo
+- RN07 — Orientações baseadas nos dados informados
 
 ### Requisitos Relacionados
 - RF08 — Acesso ao modo estratégico
+- RF09 — Atualização visual das informações
 - RNF03 — Desempenho
 
 ---
 **Descrição da Atividade:**  
-Representa o acesso do usuário à visualização estratégica com dados simulados.
+Descreve a visualização de informações estratégicas gerais do sistema.
 
-<img width="229" height="193" alt="image" src="https://github.com/user-attachments/assets/f2cf3750-6498-473f-8510-ddddf32f776c" />
+<img width="229" height="248" alt="image" src="https://github.com/user-attachments/assets/ad7b933a-8664-442a-b3c1-ac859d2e6a61" />
 
 ---
 
@@ -361,17 +364,18 @@ Representa o acesso do usuário à visualização estratégica com dados simulad
 2. Sistema exibe mensagem.
 
 ### Regras de Negócio
-- RN02 — Simulações não possuem valor legal.
+- RN02 — Informações possuem caráter informativo
 
 ### Requisitos Relacionados
 - RF16 — Exibição de mensagens informativas
+- RF09 — Atualização visual das informações
 - RNF11 — Confiabilidade básica
 
 ---
 **Descrição da Atividade:**  
 Descreve a exibição de mensagens informativas ou de erro pelo sistema.
 
-<img width="170" height="193" alt="image" src="https://github.com/user-attachments/assets/8db4ed05-30b6-41eb-a759-dca5ed03ba40" />
+<img width="201" height="248" alt="image" src="https://github.com/user-attachments/assets/41a55a01-c0a3-4cd9-8f71-dc3d965fc7dd" />
 
 ---
 
@@ -381,7 +385,7 @@ Descreve a exibição de mensagens informativas ou de erro pelo sistema.
 
 **Ator:** Contador  
 
-**Objetivo:** Permitir acesso à lista de clientes simulados.
+**Objetivo:** Permitir acesso à lista de clientes.
 
 ### Pré-condições
 - Usuário autenticado.
@@ -391,22 +395,23 @@ Descreve a exibição de mensagens informativas ou de erro pelo sistema.
 
 ### Fluxo Principal
 1. Usuário acessa módulo de clientes.
-2. Sistema consulta dados simulados.
+2. Sistema consulta dados.
 3. Lista é exibida.
 
 ### Regras de Negócio
-- RN07 — Orientações baseadas nos dados informados.
+- RN04 — Histórico por usuário
+- RN07 — Orientações baseadas nos dados informados
 
 ### Requisitos Relacionados
-- RF04 — Visualização de lista de clientes simulados
+- RF04 — Visualização de lista de clientes
+- RF09 — Atualização visual das informações
 - RNF01 — Usabilidade
 - RNF03 — Desempenho
-
 ---
 **Descrição da Atividade:**  
-Representa o processo de consulta e exibição da lista de clientes simulados.
+Descreve o carregamento e exibição da lista de clientes disponíveis no sistema.
 
-<img width="176" height="248" alt="image" src="https://github.com/user-attachments/assets/190a5c58-83e1-4d6a-b496-7739acdb130a" />
+<img width="176" height="248" alt="image" src="https://github.com/user-attachments/assets/54f9b7d5-b933-494b-b2e9-7bd34dc90501" />
 
 ---
 
@@ -429,17 +434,19 @@ Representa o processo de consulta e exibição da lista de clientes simulados.
 3. Sistema exibe informações.
 
 ### Regras de Negócio
-- RN07 — Orientações baseadas nos dados informados.
+- RN04 — Histórico por usuário
+- RN07 — Orientações baseadas nos dados informados
 
 ### Requisitos Relacionados
 - RF05 — Consulta de detalhes do cliente
+- RF09 — Atualização visual das informações
 - RNF03 — Desempenho
 
 ---
 **Descrição da Atividade:**  
 Descreve a visualização dos dados detalhados de um cliente selecionado.
 
-<img width="140" height="248" alt="image" src="https://github.com/user-attachments/assets/68f28efa-de6a-4289-87d6-6ed8208e6852" />
+<img width="182" height="248" alt="image" src="https://github.com/user-attachments/assets/67371f96-c66c-4c7b-82b0-3495e37ec0a2" />
 
 ---
 
@@ -464,12 +471,12 @@ Descreve a visualização dos dados detalhados de um cliente selecionado.
 4. Sistema exibe lista de tarefas.
 
 ### Regras de Negócio
-- --
+- RN08 — Organização de tarefas por data
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF17 — Visualização de tarefas por data
+- RF09 — Atualização visual das informações
+- RNF17 — Clareza das informações
 
 ---
 **Descrição da Atividade:**  
@@ -498,12 +505,12 @@ Representa a exibição das tarefas diárias organizadas para o usuário.
 4. Interface é atualizada.
 
 ### Regras de Negócio
-- --
+- RN09 — Atualização de status de tarefas
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF18 — Atualização de status de tarefas
+- RF09 — Atualização visual das informações
+- RNF18 — Tempo de atualização de interface
 
 ---
 **Descrição da Atividade:**  
@@ -531,12 +538,12 @@ Representa a atualização do status de uma tarefa pelo usuário.
 3. Sistema destaca tarefas prioritárias.
 
 ### Regras de Negócio
-- --
+- RN10 — Priorização automática
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF19 — Priorização automática de tarefas
+- RF24 — Destaque de tarefas urgentes
+- RNF20 — Organização visual de tarefas
 
 ---
 **Descrição da Atividade:**  
@@ -565,12 +572,12 @@ Representa a priorização automática das tarefas com base na urgência.
 4. Sistema exibe recomendações.
 
 ### Regras de Negócio
-- --
+- RN07 — Orientações baseadas nos dados informados
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF07 — Visualização de insights inteligentes
+- RF15 — Recomendações inteligentes
+- RNF02 — Eficiência
 
 ---
 **Descrição da Atividade:**  
@@ -599,12 +606,12 @@ Representa a geração de recomendações automáticas com base nas tarefas.
 4. Sistema exibe resumo.
 
 ### Regras de Negócio
-- --
+- RN11 — Geração de resumos
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF20 — Geração de resumo diário
+- RF12 — Exibição de resultados processados
+- RNF14 — Tempo de resposta das funcionalidades
 
 ---
 **Descrição da Atividade:**  
@@ -632,12 +639,12 @@ Representa a geração de um resumo diário das atividades.
 3. Sistema exibe recomendações completas.
 
 ### Regras de Negócio
-- --
+- RN07 — Orientações baseadas nos dados informados
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF21 — Detalhamento de insights
+- RF07 — Visualização de insights inteligentes
+- RNF17 — Clareza das informações
 
 ---
 **Descrição da Atividade:**  
@@ -666,12 +673,12 @@ Representa a visualização detalhada dos insights gerados pelo sistema.
 4. Sistema atualiza a interface.
 
 ### Regras de Negócio
-- --
+- RN12 — Visualização de dados por período
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF22 — Filtro de tarefas por período
+- RF09 — Atualização visual das informações
+- RNF01 — Usabilidade  
 
 ---
 **Descrição da Atividade:**  
@@ -700,12 +707,12 @@ Representa a filtragem de tarefas com base no período selecionado pelo usuário
 4. Sistema exibe informações.
 
 ### Regras de Negócio
-- --
+- RN12 — Visualização de dados por período
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF23 — Resumo por período
+- RF20 — Geração de resumo diário
+- RNF02 — Eficiência
 
 ---
 **Descrição da Atividade:**  
@@ -733,12 +740,12 @@ Representa a atualização do resumo com base no período escolhido pelo usuári
 3. Sistema aplica destaque visual.
 
 ### Regras de Negócio
-- --
+- RN10 — Priorização automática
 
 ### Requisitos Relacionados
-- --
-- --
-- --
+- RF24 — Destaque de tarefas urgentes
+- RF19 — Priorização automática de tarefas
+- RNF20 — Organização visual de tarefas
 
 ---
 **Descrição da Atividade:**  
