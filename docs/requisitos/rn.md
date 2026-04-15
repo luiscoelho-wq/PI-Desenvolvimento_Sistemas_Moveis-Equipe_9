@@ -1,23 +1,22 @@
-**## Regras de Negócio (RN)
+## Regras de Negócio (RN)
 
 ### RN01 — Acesso restrito ao sistema
 O aplicativo deve ser utilizado apenas por usuários previamente cadastrados, representando profissionais ou colaboradores de escritórios contábeis.
 
-### RN02 — Simulações não possuem valor legal
-Os resultados gerados pelas simulações tributárias têm caráter exclusivamente informativo e não substituem análises contábeis oficiais.
+### RN02 — Informações possuem caráter informativo
+As informações exibidas pelo sistema têm caráter exclusivamente informativo e educacional, não substituindo análises contábeis oficiais.
 
-### RN03 — Dados obrigatórios para simulação
-Uma simulação tributária somente poderá ser executada quando todas as informações fiscais mínimas forem preenchidas pelo usuário.
+### RN03 — Dados obrigatórios para cadastro de clientes
+O cadastro de clientes somente poderá ser realizado quando os dados mínimos obrigatórios forem preenchidos pelo usuário.
 
-### RN04 — Histórico de simulações
-Cada usuário deve visualizar apenas o histórico de simulações realizadas por sua própria conta.
+### RN04 — Histórico de informações por usuário
+Cada usuário deve visualizar apenas os dados, registros e históricos associados à sua própria conta.
 
-### RN05 — Atualização manual dos dados
-As informações utilizadas nas simulações serão inseridas manualmente pelo usuário durante a fase inicial do projeto, sem integração automática com sistemas externos.
+### RN05 — Inserção manual de dados
+As informações do sistema serão inseridas manualmente pelo usuário, sem integração automática com sistemas externos.
 
-### RN06 — Organização por cenários
-As simulações devem ser armazenadas como cenários independentes, permitindo comparação entre diferentes estratégias tributárias.
+### RN06 — Organização das informações por cliente
+Os dados devem ser armazenados e organizados individualmente por cliente, permitindo acompanhamento e consulta histórica.
 
-### RN07 — Orientações baseadas nos dados informados
-As orientações técnicas exibidas pelo aplicativo devem ser geradas exclusivamente com base nos dados fornecidos pelo usuário na simulação.
-**
+### RN07 — Geração de insights baseada em dados
+Os insights e recomendações exibidos pelo sistema devem ser gerados exclusivamente com base nos dados registrados pelo usuário.
