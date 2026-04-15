@@ -40,7 +40,8 @@ Representa o acesso à lista de clientes e a visualização dos detalhes de um c
 
 ---
 
-## Módulo 5 — Simulação Tributária
+## Módulo 5 — Fluxo Principal
+
 
 ### Descrição
 Representa o fluxo principal do módulo, incluindo a visualização das tarefas do dia, atualização de status pelo usuário e a geração automática de insights e resumos pelo sistema.
