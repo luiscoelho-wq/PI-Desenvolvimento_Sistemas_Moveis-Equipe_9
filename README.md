@@ -1,37 +1,175 @@
-# PROJETO INTEGRADO
+# Atlas Contábil
 
-Este projeto consiste no desenvolvimento de um sistema mobile interno de apoio estratégico para um escritório de contabilidade modelo. A aplicação utiliza Inteligência Artificial generativa para auxiliar contadores na análise de cenários, organização de informações técnicas e geração automatizada de documentos orientativos.
-
-O sistema trabalha exclusivamente com dados simulados, garantindo um ambiente seguro para testes e validações acadêmicas, sem utilização de informações reais. A proposta é oferecer uma ferramenta inteligente que apoie a tomada de decisão, otimize processos internos e forneça suporte técnico estruturado e geração automática de relatórios.
+Um aplicativo mobile para apoio estratégico contábil, focado na organização de tarefas, gestão de clientes e geração de insights inteligentes.
 
 ---
 
-## PROBLEMA
+## Sobre o Projeto
 
-Escritórios de contabilidade lidam diariamente com muitas demandas técnicas, prazos tributários, consultas legislativas e análises estratégicas relacionadas aos seus clientes.
+O Atlas Contábil é um aplicativo mobile desenvolvido em Flutter, criado como parte do Projeto Integrado do módulo Desenvolvimento de Sistemas Móveis no curso de Ciência da Computação.
 
-A elaboração de orientações técnicas e relatórios pode exigir tempo significativo, além de organização e padronização das informações. A ausência de uma ferramenta centralizada que auxilie na geração de documentos, análise de cenários e visualização estratégica da carteira pode impactar a eficiência operacional do escritório.
+O projeto tem como objetivo aplicar, na prática, conceitos de engenharia de software, desenvolvimento mobile e organização de sistemas digitais, por meio da construção de um protótipo funcional voltado ao contexto contábil.
 
----
-
-## PÚBLICO
-
-O produto é direcionado a contadores e profissionais que atuam em escritórios de contabilidade, sendo utilizado como ferramenta interna de apoio técnico e estratégico.
-
-Destina-se a:
-
-- Contadores responsáveis pela tomada de decisão
-- Assistentes contábeis
-- Escritórios que desejam otimizar organização interna
-- Profissionais que buscam apoio na análise de cenários tributários simulados
+A aplicação possui caráter acadêmico, utilizando exclusivamente dados fictícios, não sendo destinada ao uso comercial. Seu foco é demonstrar como uma solução tecnológica pode auxiliar profissionais contábeis na organização de informações e tomada de decisões.
 
 ---
 
-## OBJETIVO
+## Objetivo
 
-Desenvolver uma aplicação mobile inteligente que auxilie escritórios de contabilidade na organização técnica e na tomada de decisão estratégica, utilizando IA generativa aplicada a cenários simulados.
+### Objetivo Geral
 
-- Criar um dashboard estratégico com visão geral do escritório e alertas internos  
-- Desenvolver um simulador de cenários tributários para apoio à decisão    
+Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modernas podem auxiliar o profissional contábil na organização de tarefas, gestão de clientes e visualização de insights inteligentes com base em dados simulados.
 
-O projeto demonstra a aplicação prática de Inteligência Artificial generativa em um contexto empresarial, integrando tecnologia mobile, simulação de regras de negócio e geração automatizada de documentação técnica.
+### Objetivos Específicos
+
+* Centralizar informações em um único ambiente digital
+* Organizar tarefas com uso de calendário
+* Gerar insights inteligentes com apoio de IA
+* Permitir cadastro e consulta de clientes
+* Registrar e visualizar histórico de informações
+* Aplicar conceitos de desenvolvimento mobile com Flutter
+* Demonstrar o ciclo completo de desenvolvimento de software
+
+---
+
+## Contexto do Projeto
+
+O desenvolvimento do Atlas Contábil integra atividades acadêmicas com foco em:
+
+* Planejamento de produto
+* Levantamento de requisitos
+* Modelagem de sistemas
+* Desenvolvimento de interfaces mobile
+* Uso de ferramentas colaborativas
+* Aplicação de inteligência artificial no desenvolvimento
+
+O projeto simula um ambiente real de desenvolvimento, aproximando os alunos das práticas utilizadas na indústria de software.
+
+---
+
+## Problema Resolvido
+
+Profissionais da área contábil enfrentam desafios como:
+
+* Grande volume de informações fiscais
+* Dificuldade na organização de tarefas e prazos
+* Falta de centralização de dados
+* Uso de ferramentas fragmentadas (planilhas, sistemas isolados)
+
+Com o Atlas Contábil, é possível:
+
+* Centralizar informações em um único sistema
+* Organizar tarefas e prazos com eficiência
+* Visualizar dados estratégicos de forma clara
+* Apoiar a tomada de decisão com insights
+
+---
+
+## Proposta de Solução
+
+O Atlas Contábil propõe um aplicativo mobile que oferece:
+
+* Sistema de autenticação de usuários
+* Dashboard com calendário e tarefas
+* Insights inteligentes baseados em dados simulados
+* Gestão de clientes
+* Visualização de histórico de informações
+
+A solução demonstra, em ambiente acadêmico, como a tecnologia pode melhorar a produtividade e organização no setor contábil.
+
+---
+
+## Público-Alvo
+
+### Conceitual
+
+* Escritórios de contabilidade de pequeno e médio porte
+* Contadores autônomos
+* Profissionais da área fiscal e tributária
+
+### Contexto Atual
+
+* Estudantes e professores, como protótipo acadêmico
+
+---
+
+## Funcionalidades
+
+### Autenticação de Usuário
+
+* Login do contador
+* Cadastro de conta
+* Validação de credenciais
+* Controle de acesso
+
+### Painel com Calendário e Tarefas
+
+* Visualização de calendário mensal
+* Organização de tarefas por data
+* Listagem de atividades do dia
+* Acompanhamento de prazos
+
+### Insights Inteligentes
+
+* Geração de insights com dados simulados
+* Alertas de prazos
+* Recomendações automáticas
+* Indicação de prioridades
+
+### Gestão de Clientes
+
+* Cadastro de clientes fictícios
+* Listagem de clientes
+* Consulta de dados básicos
+* Histórico de clientes
+
+### Histórico de Informações
+
+* Registro de atividades
+* Consulta de histórico individual
+* Acompanhamento de dados anteriores
+
+---
+
+## Backlog do Produto (Resumo)
+
+O desenvolvimento está organizado em épicos:
+
+* Autenticação de Usuário (em desenvolvimento)
+* Interface e Navegação (em desenvolvimento)
+* Dashboard Estratégico (em desenvolvimento)
+* Gestão de Clientes (planejado)
+* Análise e Histórico (não iniciado)
+* Comunicação e Feedback (planejado)
+
+---
+
+## Tecnologias Utilizadas
+
+* Framework Mobile: Flutter
+* Linguagem: Dart
+* Arquitetura: Estruturada para escalabilidade
+* Outros: Conceitos de IA aplicada (simulada), APIs e boas práticas de desenvolvimento
+
+---
+
+## Requisitos Não Funcionais
+
+* Segurança no acesso
+* Desempenho adequado
+* Interface responsiva
+* Escalabilidade
+* Usabilidade e clareza visual
+
+---
+
+## Participantes do Projeto
+
+* Luís Felipe Coelho | RA: 25001003
+
+* Pedro Ignácio de Oliveira Bortolon | RA: 25000137
+
+* Murilo Colli Barbosa | RA: 25000458
+
+* Pollyana Caso | RA: 25001334
+
