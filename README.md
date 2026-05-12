@@ -26,7 +26,7 @@ Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modern
 * Organizar tarefas com uso de calendário
 * Gerar insights inteligentes com apoio de IA
 * Permitir cadastro e consulta de clientes
-* Registrar e visualizar histórico de informações
+* Registrar e visualizar informações
 * Aplicar conceitos de desenvolvimento mobile com Flutter
 * Demonstrar o ciclo completo de desenvolvimento de software
 
