@@ -48,7 +48,7 @@ O **Atlas Contábil** propõe a criação de um aplicativo mobile que permita ao
 - **Sistema de autenticação de usuários (contador)**
 - **Dashboard com calendário e tarefas**
 - **Insights inteligentes gerados por IA com base em dados simulados**
-- **Gestão de clientes e histórico de informações**
+- **Gestão de clientes e de informações**
 
 A aplicação tem como objetivo demonstrar, em ambiente acadêmico, como uma ferramenta digital pode auxiliar profissionais contábeis na **organização, acompanhamento de prazos e apoio à tomada de decisão**.
 
@@ -119,16 +119,7 @@ Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modern
 
 - Cadastro de clientes fictícios  
 - Listagem de clientes  
-- Consulta de informações básicas  
-- Visualização de histórico do cliente  
-
----
-
-### 7.5 Histórico de Informações
-
-- Registro de dados relacionados aos clientes  
-- Consulta de histórico individual  
-- Acompanhamento de atividades anteriores  
+- Consulta de informações básicas     
 
 ---
 
@@ -151,7 +142,6 @@ Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modern
 - Interface com calendário e tarefas;
 - Geração de insights inteligentes (simulados);
 - Cadastro e gerenciamento de clientes;
-- Visualização de histórico de informações.
 
 ---
 
