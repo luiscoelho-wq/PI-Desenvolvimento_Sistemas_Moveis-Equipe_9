@@ -73,7 +73,6 @@ O Atlas Contábil propõe um aplicativo mobile que oferece:
 * Dashboard com calendário e tarefas
 * Insights inteligentes baseados em dados simulados
 * Gestão de clientes
-* Visualização de histórico de informações
 
 A solução demonstra, em ambiente acadêmico, como a tecnologia pode melhorar a produtividade e organização no setor contábil.
 
@@ -121,13 +120,6 @@ A solução demonstra, em ambiente acadêmico, como a tecnologia pode melhorar a
 * Cadastro de clientes fictícios
 * Listagem de clientes
 * Consulta de dados básicos
-* Histórico de clientes
-
-### Histórico de Informações
-
-* Registro de atividades
-* Consulta de histórico individual
-* Acompanhamento de dados anteriores
 
 ---
 
@@ -135,12 +127,12 @@ A solução demonstra, em ambiente acadêmico, como a tecnologia pode melhorar a
 
 O desenvolvimento está organizado em épicos:
 
-* Autenticação de Usuário (em desenvolvimento)
-* Interface e Navegação (em desenvolvimento)
-* Dashboard Estratégico (em desenvolvimento)
-* Gestão de Clientes (planejado)
-* Análise e Histórico (não iniciado)
-* Comunicação e Feedback (planejado)
+* Autenticação de Usuário 
+* Interface e Navegação
+* Dashboard Estratégico
+* Gestão de Clientes
+* Análise de Dados
+* Comunicação e Feedback
 
 ---
 
@@ -149,7 +141,7 @@ O desenvolvimento está organizado em épicos:
 * Framework Mobile: Flutter
 * Linguagem: Dart
 * Arquitetura: Estruturada para escalabilidade
-* Outros: Conceitos de IA aplicada (simulada), APIs e boas práticas de desenvolvimento
+* Outros: Conceitos de IA aplicada (simulada), APIs (Gemini), banco de dados Firestore do Firebase e boas práticas de desenvolvimento
 
 ---
 
