@@ -36,39 +36,36 @@ O sistema deve permitir que um novo usuário realize cadastro informando dados b
 ### RF12 — Logout do sistema
 O sistema deve permitir que o usuário encerre sua sessão atual, retornando à tela de login do aplicativo.
 
-### RF13 — Histórico de informações de clientes
-O sistema deve permitir que o usuário visualize um histórico de informações relacionadas aos clientes cadastrados.
+### RF13 — Visualização detalhada do cliente
+O sistema deve permitir que o usuário selecione um cliente para visualizar seus dados.
 
-### RF14 — Visualização detalhada do cliente
-O sistema deve permitir que o usuário selecione um cliente para visualizar seus dados e histórico detalhado.
-
-### RF15 — Recomendações inteligentes
+### RF14 — Recomendações inteligentes
 O sistema deve apresentar recomendações automáticas com base nos dados e atividades registradas no sistema.
 
-### RF16 — Exibição de mensagens informativas do sistema
+### RF15 — Exibição de mensagens informativas do sistema
 O sistema deve exibir mensagens informativas ou alertas durante a utilização da aplicação, como erros de preenchimento, sucesso de operações ou avisos de funcionamento.
 
-### RF17 — Visualização de tarefas por data  
+### RF16 — Visualização de tarefas por data  
 O sistema deve permitir a exibição de tarefas organizadas conforme a data selecionada no calendário.  
 
-### RF18 — Atualização de status de tarefas  
+### RF17 — Atualização de status de tarefas  
 O sistema deve permitir que o usuário altere o status de uma tarefa (pendente/concluída).  
 
-### RF19 — Priorização automática de tarefas  
+### RF18 — Priorização automática de tarefas  
 O sistema deve identificar e organizar tarefas com base na urgência e prazos.  
 
-### RF20 — Geração de resumo diário  
+### RF19 — Geração de resumo diário  
 O sistema deve gerar automaticamente um resumo das atividades do dia. 
 
-### RF21 — Detalhamento de insights  
+### RF20 — Detalhamento de insights  
 O sistema deve permitir a visualização detalhada dos insights gerados. 
 
-### RF22 — Filtro de tarefas por período  
+### RF21 — Filtro de tarefas por período  
 O sistema deve permitir filtrar tarefas por diferentes períodos (dia, semana, mês).  
 
-### RF23 — Resumo por período  
+### RF22 — Resumo por período  
 O sistema deve gerar resumos com base no período selecionado.  
 
-### RF24 — Destaque de tarefas urgentes  
+### RF23 — Destaque de tarefas urgentes  
 O sistema deve destacar visualmente tarefas consideradas urgentes.
 
