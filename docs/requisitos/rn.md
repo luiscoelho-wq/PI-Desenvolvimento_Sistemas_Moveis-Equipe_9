@@ -16,7 +16,7 @@ Cada usuário deve visualizar apenas os dados, registros e históricos associado
 As informações do sistema serão inseridas manualmente pelo usuário, sem integração automática com sistemas externos.
 
 ### RN06 — Organização das informações por cliente
-Os dados devem ser armazenados e organizados individualmente por cliente, permitindo acompanhamento e consulta histórica.
+Os dados devem ser armazenados e organizados individualmente por cliente, permitindo acompanhamento e consulta.
 
 ### RN07 — Geração de insights baseada em dados
 Os insights e recomendações exibidos pelo sistema devem ser gerados exclusivamente com base nos dados registrados pelo usuário.
