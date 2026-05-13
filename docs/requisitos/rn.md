@@ -9,8 +9,8 @@ As informações exibidas pelo sistema têm caráter exclusivamente informativo 
 ### RN03 — Dados obrigatórios para cadastro de clientes
 O cadastro de clientes somente poderá ser realizado quando os dados mínimos obrigatórios forem preenchidos pelo usuário.
 
-### RN04 — Histórico de informações por usuário
-Cada usuário deve visualizar apenas os dados, registros e históricos associados à sua própria conta.
+### RN04 — Informações por usuário
+Cada usuário deve visualizar apenas os dados e registros associados à sua própria conta.
 
 ### RN05 — Inserção manual de dados
 As informações do sistema serão inseridas manualmente pelo usuário, sem integração automática com sistemas externos.
