@@ -9,8 +9,8 @@ O sistema deve exibir um dashboard contendo indicadores estratégicos simulados 
 ### RF03 — Navegação entre telas
 O sistema deve permitir a navegação entre as telas principais por meio de componentes de interface.
 
-### RF04 — Visualização de lista de clientes simulados
-O sistema deve permitir a visualização de clientes fictícios cadastrados para fins de demonstração.
+### RF04 — Visualização de lista de clientes 
+O sistema deve permitir a visualização de clientes cadastrados.
 
 ### RF05 — Consulta de detalhes do cliente
 O sistema deve exibir informações estratégicas simuladas ao selecionar um cliente da lista.
