@@ -13,7 +13,7 @@ O sistema deve permitir a navegação entre as telas principais por meio de comp
 O sistema deve permitir a visualização de clientes cadastrados.
 
 ### RF05 — Consulta de detalhes do cliente
-O sistema deve exibir informações estratégicas simuladas ao selecionar um cliente da lista.
+O sistema deve exibir informações quando selecionar um cliente da lista.
 
 ### RF06 — Visualização de calendário e tarefas
 O sistema deve permitir a visualização de um calendário contendo tarefas organizadas por data para acompanhamento de prazos.
