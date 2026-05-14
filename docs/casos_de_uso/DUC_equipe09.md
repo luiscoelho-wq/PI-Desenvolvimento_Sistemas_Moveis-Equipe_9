@@ -40,10 +40,10 @@ Este diagrama representa o gerenciamento de clientes simulados. Permite visualiz
 
 ---
 
-## Módulo 5 — Análise e Histórico Estratégico
+## Módulo 5 — Gestão Inteligente de Tarefas
 
-Este diagrama apresenta as funcionalidades relacionadas à análise de informações do sistema. Inclui a visualização do histórico de registros, consulta de detalhes, geração de recomendações estratégicas e exibição de resumos com base nos dados disponíveis, permitindo ao usuário interpretar informações e apoiar a tomada de decisão dentro do aplicativo.
+Este diagrama apresenta as funcionalidades relacionadas à análise de informações do sistema. Inclui a visualização de registros, consulta de detalhes, geração de recomendações estratégicas e exibição de resumos com base nos dados disponíveis, permitindo ao usuário interpretar informações e apoiar a tomada de decisão dentro do aplicativo.
 
-<img width="636" height="650" alt="image" src="https://github.com/user-attachments/assets/5d222564-fab6-46de-9ce3-6481bc1567fb" />
+<img width="2099" height="241" alt="image" src="https://github.com/user-attachments/assets/6fb86d6e-dbef-4984-b670-ecff08f9d6c9" />
 
 ---
