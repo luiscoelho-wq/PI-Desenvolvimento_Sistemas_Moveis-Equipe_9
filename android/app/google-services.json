@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "161048571045",
+    "project_id": "atlascontabilequipe09",
+    "storage_bucket": "atlascontabilequipe09.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161048571045:android:9fdab6800fb0e2099db14c",
+        "android_client_info": {
+          "package_name": "com.example.pi2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApg4_sRZQLxPvmHvvd4cCB-6c1QzV0XNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
