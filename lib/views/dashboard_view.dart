@@ -33,7 +33,6 @@ class _DashboardViewState extends State<DashboardView> {
             child: Column(
               children: [
 
-                // HEADER
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(22, 24, 22, 30),
@@ -57,7 +56,7 @@ class _DashboardViewState extends State<DashboardView> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // TEXTO
+                      
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -80,7 +79,6 @@ class _DashboardViewState extends State<DashboardView> {
                         ],
                       ),
 
-                      // AVATAR
                       GestureDetector(
                         onTap: () async {
                           await vm.authService.logout();
@@ -118,7 +116,6 @@ class _DashboardViewState extends State<DashboardView> {
                   ),
                 ),
 
-                // CONTEÚDO
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
@@ -132,7 +129,6 @@ class _DashboardViewState extends State<DashboardView> {
 
                         const SizedBox(height: 18),
 
-                        // CARDS MÉTRICAS
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
@@ -194,7 +190,6 @@ class _DashboardViewState extends State<DashboardView> {
                         CategoryPieChart(vm: vm),
                         const SizedBox(height: 18),
 
-                        // QUADRADO DE INSIGHTS
                         Container(
                           margin: const EdgeInsets.symmetric(horizontal: 16),
                           padding: const EdgeInsets.all(18),
@@ -263,25 +258,21 @@ class _DashboardViewState extends State<DashboardView> {
 
                                     if (textoLimpo.isEmpty) continue;
 
-                                    // 1. Pula saudações e introduções genéricas da IA
                                     if (textoLimpo.toLowerCase().startsWith('olá') || 
                                         textoLimpo.toLowerCase().contains('aqui estão algumas dicas') ||
                                         textoLimpo.toLowerCase() == 'dicas gerais' ||
                                         textoLimpo.toLowerCase() == 'o que é mais urgente') {
                                       
-                                      // Se a linha indicar explicitamente a seção urgente, vira a chave
                                       if (textoLimpo.toLowerCase().contains('urgente')) {
                                         emUrgente = true;
                                       }
                                       continue;
                                     }
 
-                                    // 2. Controla a troca de seções caso apareça a palavra urgente no meio do caminho
                                     if (textoLimpo.toLowerCase().contains('urgente') && !adicionouTituloUrgente) {
                                       emUrgente = true;
                                     }
 
-                                    // 3. Renderiza o título de Dicas apenas UMA vez no topo
                                     if (!emUrgente && !adicionouTituloDicas) {
                                       widgets.add(
                                         const Padding(
@@ -300,7 +291,6 @@ class _DashboardViewState extends State<DashboardView> {
                                       adicionouTituloDicas = true;
                                     }
 
-                                    // 4. Renderiza o título de Urgente apenas UMA vez quando a seção mudar
                                     if (emUrgente && !adicionouTituloUrgente) {
                                       widgets.add(
                                         const Padding(
@@ -319,7 +309,6 @@ class _DashboardViewState extends State<DashboardView> {
                                       adicionouTituloUrgente = true;
                                     }
 
-                                    // 5. Adiciona o card com o conteúdo real
                                     widgets.add(
                                       Container(
                                         margin: const EdgeInsets.only(bottom: 8),
@@ -363,7 +352,6 @@ class _DashboardViewState extends State<DashboardView> {
 
                               const SizedBox(height: 10),
                               
-                              // Botão roxo de atualizar
                               Align(
                                 alignment: Alignment.centerRight,
                                 child: TextButton.icon(
