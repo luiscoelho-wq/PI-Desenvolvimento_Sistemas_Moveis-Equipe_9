@@ -117,7 +117,7 @@ A solução demonstra, em ambiente acadêmico, como a tecnologia pode melhorar a
 
 ### Gestão de Clientes
 
-* Cadastro de clientes fictícios
+* Cadastro de clientes 
 * Listagem de clientes
 * Consulta de dados básicos
 
