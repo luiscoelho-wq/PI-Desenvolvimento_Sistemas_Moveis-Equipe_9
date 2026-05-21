@@ -34,9 +34,9 @@ Mostra o carregamento do dashboard e a exibição dos indicadores simulados ao u
 ## Módulo 4 — Clientes
 
 ### Descrição
-Representa o acesso à lista de clientes e a visualização dos detalhes de um cliente específico.
+Representa o acesso àclista de clientes e sua visualização.
 
-<img width="391" height="557" alt="image" src="https://github.com/user-attachments/assets/cad273eb-e32d-4a3e-87e6-76c1077e17fc" />
+<img width="419" height="383" alt="image" src="https://github.com/user-attachments/assets/d7bb8b36-e6bb-491e-9405-24724cd19a3e" />
 
 ---
 
