@@ -22,7 +22,7 @@ O sistema deve ser desenvolvido utilizando Flutter, possibilitando futura adapta
 O sistema deve utilizar apenas dados fictícios, não permitindo inserção de dados reais sensíveis.
 
 ### RNF08 — Padronização visual
-As telas devem manter consistência de cores, tipografia e componentes visuais conforme definido no protótipo.
+As telas devem manter consistência de cores, tipografia e componentes visuais padronizados.
 
 ### RNF09 — Documentação
 O projeto deve possuir documentação organizada no repositório GitHub, incluindo visão do produto e requisitos.
@@ -42,8 +42,5 @@ O aplicativo deve ser executado corretamente em dispositivos móveis compatívei
 ### RNF14 — Tempo de resposta das funcionalidades
 As funcionalidades principais do sistema (login, navegação entre telas e insights inteligentes) devem apresentar resposta em tempo adequado, garantindo uma experiência fluida ao usuário.
 
-### RNF15 — Organização modular do projeto
-O projeto deve ser estruturado em módulos ou camadas que separem componentes de interface, lógica de aplicação e manipulação de dados, facilitando manutenção e evolução do sistema.
 
-### RNF16 — Estabilidade da navegação
-A navegação entre telas do aplicativo deve ocorrer de forma estável, evitando travamentos ou interrupções durante o fluxo de uso do sistema.
+
