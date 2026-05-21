@@ -117,7 +117,7 @@ Desenvolver um aplicativo mobile funcional que demonstre como tecnologias modern
 
 ### 7.4 Gestão de Clientes
 
-- Cadastro de clientes fictícios  
+- Cadastro de clientes    
 - Listagem de clientes  
 - Consulta de informações básicas     
 
