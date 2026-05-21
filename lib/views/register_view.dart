@@ -265,7 +265,7 @@ class _RegisterViewState extends State<RegisterView> {
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF6A1B9A),
-                            foregroundColor: Colors.white, // Define a cor do texto/ícone como branco
+                            foregroundColor: Colors.white, 
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
                             ),
