@@ -18,23 +18,20 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 
 ## Módulo 3 — Dashboard
 - UC08 — Visualizar Dashboard  
-- UC09 — Acessar Modo Estratégico  
+- UC09 — Acessar Painel Inteligente
 - UC10 — Exibir Mensagens Informativas  
 
 ## Módulo 4 — Clientes
-- UC11 — Visualizar Lista de Clientes  
-- UC12 — Consultar Detalhes de Cliente  
+- UC11 — Visualizar Lista de Clientes    
 
 ## Módulo 5 — Gestão Inteligente de Tarefas
-- UC13 — Visualizar Tarefas do Dia  
-- UC14 — Marcar Tarefa como Concluída  
-- UC15 — Priorizar Tarefas  
-- UC16 — Gerar Insights Inteligentes  
-- UC17 — Gerar Resumo do Dia  
-- UC18 — Visualizar Insights Detalhados  
-- UC19 — Filtrar Tarefas por Período  
-- UC20 — Visualizar Resumo por Período  
-- UC21 — Destacar Tarefas Urgentes  
+- UC12 — Visualizar Tarefas por Data  
+- UC13 — Marcar Tarefa como Concluída  
+- UC14 — Definir Prioridade de Tarefas   
+- UC15 — Gerar Insights Inteligentes  
+- UC16 — Gerar Resumo Diário  
+- UC17 — Filtrar Tarefas por Período  
+ 
 ---
 
 # Módulo 1 — Acesso ao Sistema
@@ -61,7 +58,7 @@ Documento contendo os principais casos de uso do aplicativo **Atlas Contábil**,
 - RN01 — Acesso restrito ao sistema.
 
 ### Requisitos Relacionados
-- RF11 — Cadastro de usuário
+- RF10 — Cadastro de usuário
 - RNF01 — Usabilidade
 - RNF07 — Segurança acadêmica
 - RNF13 — Compatibilidade com dispositivos móveis
@@ -105,7 +102,7 @@ Representa o fluxo de cadastro de um novo usuário, incluindo o preenchimento do
 
 ### Requisitos Relacionados
 - RF01 — Exibição da tela inicial
-- RF16 — Exibição de mensagens informativas
+- RF13 — Exibição de mensagens informativas do sistema
 - RNF03 — Desempenho
 - RNF14 — Tempo de resposta das funcionalidades
 
@@ -117,7 +114,7 @@ Descreve o processo de autenticação do usuário, incluindo a validação das c
 
 ---
 
-## Caso de Uso 03 — Encerrar Sessão (Logout)
+## Caso de Uso 03 — Encerrar Sessão 
 
 **Ator:** Contador  
 
@@ -138,9 +135,8 @@ Descreve o processo de autenticação do usuário, incluindo a validação das c
 - RN01 — Acesso restrito ao sistema.
 
 ### Requisitos Relacionados
-- RF12 — Logout do sistema
-- RNF11 — Confiabilidade básica
-- RNF16 — Estabilidade da navegação
+- RF11 — Logout do sistema
+- RNF11 — Confiabilidade básica  
 
 ---
 **Descrição da Atividade:**  
@@ -205,8 +201,7 @@ Descreve o carregamento da interface principal do sistema e a exibição das fun
 
 ### Requisitos Relacionados
 - RF03 — Navegação entre telas
-- RNF03 — Desempenho
-- RNF16 — Estabilidade da navegação
+- RNF03 — Desempenho  
 
 ---
 **Descrição da Atividade:**  
@@ -234,10 +229,10 @@ Representa a navegação do usuário entre as diferentes telas do aplicativo.
 3. Interface é atualizada.
 
 ### Regras de Negócio
-- RN05 — Atualização manual dos dados.
+- RN05 — Inserção manual de dados  
 
 ### Requisitos Relacionados
-- RF09 — Atualização visual das informações
+- RF08 — Atualização visual das informações
 - RNF03 — Desempenho
 
 ---
@@ -265,10 +260,10 @@ Descreve a atualização das informações exibidas na interface após ações r
 2. Componentes são exibidos organizados.
 
 ### Regras de Negócio
-- RN05 — Atualização manual dos dados.
+- RN05 — Inserção manual de dados
 
 ### Requisitos Relacionados
-- RF10 — Organização visual das interfaces
+- RF09 — Organização visual das interfaces
 - RNF08 — Padronização visual
 
 ---
@@ -302,7 +297,7 @@ Representa a aplicação do layout e a organização visual dos elementos da int
   
 ### Requisitos Relacionados
 - RF02 — Visualização do Dashboard
-- RF09 — Atualização visual das informações
+- RF08 — Atualização visual das informações
 - RNF01 — Usabilidade
 - RNF03 — Desempenho
 
@@ -314,36 +309,41 @@ Descreve o carregamento e a exibição dos indicadores no dashboard do sistema.
 
 ---
 
-## Caso de Uso 09 — Acessar Modo Estratégico
+## Caso de Uso 09 — Acessar Painel Inteligente
 
-**Ator:** Contador  
+## Ator
+Contador
 
-**Objetivo:** Visualizar visão geral estratégica da carteira de clientes.
+## Objetivo
+Permitir que o usuário visualize uma visão geral contendo calendário, tarefas e insights relevantes.
 
-### Pré-condições
+## Pré-condições
 - Usuário autenticado.
 
-### Pós-condições
-- Modo estratégico exibido.
+## Pós-condições
+- Painel inteligente exibido ao usuário.
 
-### Fluxo Principal
-1. Usuário acessa modo estratégico.
-2. Sistema apresenta dados.
+## Fluxo Principal
+1. Usuário acessa o painel inteligente.
+2. Sistema carrega calendário e tarefas.
+3. Sistema gera insights automáticos.
+4. Sistema exibe informações organizadas.
 
-### Regras de Negócio
+## Regras de Negócio
 - RN02 — Informações possuem caráter informativo
-- RN07 — Orientações baseadas nos dados informados
+- RN07 — Geração de insights baseada em dados  
 
-### Requisitos Relacionados
-- RF08 — Acesso ao modo estratégico
-- RF09 — Atualização visual das informações
+## Requisitos Relacionados
+- RF07 — Acesso ao painel inteligente
+- RF05 — Visualização de calendário e tarefas
+- RF06 — Visualização de insights inteligentes
+- RNF01 — Usabilidade
 - RNF03 — Desempenho
 
----
-**Descrição da Atividade:**  
-Descreve a visualização de informações estratégicas gerais do sistema.
+## Descrição da Atividade
+Representa o acesso ao painel principal inteligente do sistema, contendo calendário, tarefas e insights relevantes ao usuário.
 
-<img width="229" height="248" alt="image" src="https://github.com/user-attachments/assets/ad7b933a-8664-442a-b3c1-ac859d2e6a61" />
+<img width="266" height="365" alt="image" src="https://github.com/user-attachments/assets/d23da9ed-0a7e-4a95-835a-d8a5f9f00f45" />
 
 ---
 
@@ -367,8 +367,8 @@ Descreve a visualização de informações estratégicas gerais do sistema.
 - RN02 — Informações possuem caráter informativo
 
 ### Requisitos Relacionados
-- RF16 — Exibição de mensagens informativas
-- RF09 — Atualização visual das informações
+- RF13 — Exibição de mensagens informativas do sistema
+- RF08 — Atualização visual das informações
 - RNF11 — Confiabilidade básica
 
 ---
@@ -399,12 +399,12 @@ Descreve a exibição de mensagens informativas ou de erro pelo sistema.
 3. Lista é exibida.
 
 ### Regras de Negócio
-- RN04 — Histórico por usuário
-- RN07 — Orientações baseadas nos dados informados
+- RN04 — Informações por usuário
+- RN07 — Geração de insights baseada em dados
 
 ### Requisitos Relacionados
 - RF04 — Visualização de lista de clientes
-- RF09 — Atualização visual das informações
+- RF08 — Atualização visual das informações
 - RNF01 — Usabilidade
 - RNF03 — Desempenho
 ---
@@ -415,78 +415,47 @@ Descreve o carregamento e exibição da lista de clientes disponíveis no sistem
 
 ---
 
-## Caso de Uso 12 — Consultar Detalhes de Cliente
-
-**Ator:** Contador  
-
-**Objetivo:** Visualizar informações estratégicas de um cliente.
-
-### Pré-condições
-- Usuário autenticado.
-- Cliente selecionado.
-
-### Pós-condições
-- Detalhes do cliente exibidos.
-
-### Fluxo Principal
-1. Usuário seleciona cliente.
-2. Sistema carrega dados.
-3. Sistema exibe informações.
-
-### Regras de Negócio
-- RN04 — Histórico por usuário
-- RN07 — Orientações baseadas nos dados informados
-
-### Requisitos Relacionados
-- RF05 — Consulta de detalhes do cliente
-- RF09 — Atualização visual das informações
-- RNF03 — Desempenho
-
----
-**Descrição da Atividade:**  
-Descreve a visualização dos dados detalhados de um cliente selecionado.
-
-<img width="182" height="248" alt="image" src="https://github.com/user-attachments/assets/67371f96-c66c-4c7b-82b0-3495e37ec0a2" />
-
----
-
 # Módulo 5 — Gestão Inteligente de Tarefas
 
-## Caso de Uso 13 — Visualizar Tarefas do Dia
+## Caso de Uso 12 — Visualizar Tarefas por Data
 
-**Ator:** Usuário  
+## Ator
+Contador
 
-**Objetivo:** Permitir que o usuário visualize as tarefas do dia atual.
+## Objetivo
+Permitir que o usuário visualize tarefas organizadas conforme a data selecionada no calendário.
 
-### Pré-condições
+## Pré-condições
 - Usuário autenticado.
+- Calendário disponível no sistema.
 
-### Pós-condições
-- Lista de tarefas exibida.
+## Pós-condições
+- Lista de tarefas da data selecionada exibida.
 
-### Fluxo Principal
-1. Usuário acessa a tela inicial.
-2. Sistema identifica a data atual.
-3. Sistema carrega tarefas do dia.
-4. Sistema exibe lista de tarefas.
+## Fluxo Principal
+1. Usuário acessa o calendário.
+2. Usuário seleciona uma data.
+3. Sistema identifica as tarefas associadas.
+4. Sistema exibe as tarefas organizadas.
 
-### Regras de Negócio
-- RN08 — Organização de tarefas por data
+## Regras de Negócio
+- RN07 — Geração de insights baseada em dados
 
-### Requisitos Relacionados
-- RF17 — Visualização de tarefas por data
-- RF09 — Atualização visual das informações
-- RNF17 — Clareza das informações
+## Requisitos Relacionados
+- RF05 — Visualização de calendário e tarefas
+- RF14 — Visualização de tarefas por data
+- RF08 — Atualização visual das informações
+- RNF01 — Usabilidade
+- RNF03 — Desempenho
+
+## Descrição da Atividade
+Representa a visualização das tarefas organizadas conforme a data selecionada pelo usuário no calendário.
+
+<img width="266" height="311" alt="image" src="https://github.com/user-attachments/assets/3cbd9a77-75b8-4919-b99d-09cf702961aa" />
 
 ---
-**Descrição da Atividade:**  
-Representa a exibição das tarefas diárias organizadas para o usuário.
 
-<img width="207" height="303" alt="image" src="https://github.com/user-attachments/assets/cf1391f7-1cca-4a70-bee0-79d3ad8566f5" />
-
----
-
-## Caso de Uso 14 — Marcar Tarefa como Concluída
+## Caso de Uso 13 — Marcar Tarefa como Concluída
 
 **Ator:** Usuário  
 
@@ -505,12 +474,11 @@ Representa a exibição das tarefas diárias organizadas para o usuário.
 4. Interface é atualizada.
 
 ### Regras de Negócio
-- RN09 — Atualização de status de tarefas
+- RN06 — Organização das informações por cliente
 
 ### Requisitos Relacionados
-- RF18 — Atualização de status de tarefas
-- RF09 — Atualização visual das informações
-- RNF18 — Tempo de atualização de interface
+- RF15 — Atualização de status de tarefas
+- RF08 — Atualização visual das informações  
 
 ---
 **Descrição da Atividade:**  
@@ -520,40 +488,46 @@ Representa a atualização do status de uma tarefa pelo usuário.
 
 ---
 
-## Caso de Uso 15 — Priorizar Tarefas
+## Caso de Uso 14 — Definir Prioridade de Tarefas
 
-**Ator:** Sistema  
+## Ator
+Contador
 
-**Objetivo:** Identificar automaticamente tarefas mais urgentes.
+## Objetivo
+Permitir que o usuário destaque tarefas conforme sua prioridade ou urgência.
 
-### Pré-condições
-- Tarefas disponíveis.
+## Pré-condições
+- Usuário autenticado.
+- Tarefas disponíveis no sistema.
 
-### Pós-condições
-- Tarefas organizadas por prioridade.
+## Pós-condições
+- Tarefas destacadas conforme prioridade definida pelo usuário.
 
-### Fluxo Principal
-1. Sistema analisa prazos das tarefas.
-2. Sistema identifica tarefas urgentes.
-3. Sistema destaca tarefas prioritárias.
+## Fluxo Principal
+1. Usuário acessa a lista de tarefas.
+2. Usuário seleciona uma tarefa.
+3. Usuário define o nível de prioridade.
+4. Sistema atualiza as informações da tarefa.
+5. Sistema aplica destaque visual na interface.
 
-### Regras de Negócio
-- RN10 — Priorização automática
+## Regras de Negócio
+- RN07 — Geração de insights baseada em dados.
 
-### Requisitos Relacionados
-- RF19 — Priorização automática de tarefas
-- RF24 — Destaque de tarefas urgentes
-- RNF20 — Organização visual de tarefas
+## Requisitos Relacionados
+- RF19 — Destaque de prioridade nas tarefas
+- RF15 — Atualização de status de tarefas
+- RF08 — Atualização visual das informações
+- RNF08 — Padronização visual
+- RNF11 — Confiabilidade básica
+
+## Descrição da Atividade
+Representa a definição manual de prioridade das tarefas pelo usuário, permitindo destaque visual conforme urgência.
+
+<img width="245" height="365" alt="image" src="https://github.com/user-attachments/assets/e40f9d2c-828d-472e-ad78-c58b9e80aefb" />
 
 ---
-**Descrição da Atividade:**  
-Representa a priorização automática das tarefas com base na urgência.
 
-<img width="237" height="303" alt="image" src="https://github.com/user-attachments/assets/191955e5-ab17-4813-9f03-a29dfd545dc0" />
-
----
-
-## Caso de Uso 16 — Gerar Insights Inteligentes
+## Caso de Uso 15 — Gerar Insights Inteligentes
 
 **Ator:** Sistema  
 
@@ -572,12 +546,12 @@ Representa a priorização automática das tarefas com base na urgência.
 4. Sistema exibe recomendações.
 
 ### Regras de Negócio
-- RN07 — Orientações baseadas nos dados informados
+- RN07 — Geração de insights baseada em dados  
 
 ### Requisitos Relacionados
-- RF07 — Visualização de insights inteligentes
-- RF15 — Recomendações inteligentes
-- RNF02 — Eficiência
+- RF06 — Visualização de insights inteligentes
+- RF12 — Recomendações inteligentes
+- RNF03 — Desempenho
 
 ---
 **Descrição da Atividade:**  
@@ -587,171 +561,76 @@ Representa a geração de recomendações automáticas com base nas tarefas.
 
 ---
 
-## Caso de Uso 17 — Gerar Resumo do Dia
+## Caso de Uso 16 — Gerar Resumo Diário
 
-**Ator:** Sistema  
+## Ator
+Sistema
 
-**Objetivo:** Apresentar um resumo das atividades do dia.
+## Objetivo
+Gerar automaticamente um resumo das atividades do dia.
 
-### Pré-condições
-- Tarefas disponíveis.
+## Pré-condições
+- Existirem tarefas cadastradas para o dia atual.
 
-### Pós-condições
-- Resumo exibido.
+## Pós-condições
+- Resumo diário exibido ao usuário.
 
-### Fluxo Principal
-1. Sistema coleta dados das tarefas.
-2. Sistema organiza informações.
-3. Sistema gera resumo do dia.
-4. Sistema exibe resumo.
+## Fluxo Principal
+1. Sistema identifica as tarefas do dia.
+2. Sistema organiza as informações.
+3. Sistema gera o resumo automático.
+4. Sistema exibe o resumo ao usuário.
 
-### Regras de Negócio
-- RN11 — Geração de resumos
+## Regras de Negócio
+- RN07 — Geração de insights baseada em dados.
 
-### Requisitos Relacionados
-- RF20 — Geração de resumo diário
-- RF12 — Exibição de resultados processados
+## Requisitos Relacionados
+- RF17 — Geração de resumo diário
+- RF08 — Atualização visual das informações
+- RNF03 — Desempenho
 - RNF14 — Tempo de resposta das funcionalidades
 
----
-**Descrição da Atividade:**  
-Representa a geração de um resumo diário das atividades.
+## Descrição da Atividade
+Representa a geração automática de um resumo diário com base nas tarefas registradas no sistema.
 
-<img width="227" height="303" alt="image" src="https://github.com/user-attachments/assets/e9f55f73-4b80-4159-97b8-604111f06988" />
-
----
-
-## Caso de Uso 18 — Visualizar Insights Detalhados
-
-**Ator:** Usuário  
-
-**Objetivo:** Permitir acesso completo às recomendações geradas.
-
-### Pré-condições
-- Insights disponíveis.
-
-### Pós-condições
-- Detalhamento exibido.
-
-### Fluxo Principal
-1. Usuário seleciona “ver mais”.
-2. Sistema carrega detalhes.
-3. Sistema exibe recomendações completas.
-
-### Regras de Negócio
-- RN07 — Orientações baseadas nos dados informados
-
-### Requisitos Relacionados
-- RF21 — Detalhamento de insights
-- RF07 — Visualização de insights inteligentes
-- RNF17 — Clareza das informações
-
----
-**Descrição da Atividade:**  
-Representa a visualização detalhada dos insights gerados pelo sistema.
-
-<img width="253" height="248" alt="image" src="https://github.com/user-attachments/assets/bde1c67a-685b-452d-8fb3-a54bdf41345a" />
+<img width="253" height="311" alt="image" src="https://github.com/user-attachments/assets/547dccb0-dbb4-444d-b395-5b53a7c11f2b" />
 
 ---
 
-## Caso de Uso 19 — Filtrar Tarefas por Período
+## Caso de Uso 17 — Filtrar Tarefas por Período
 
-**Ator:** Usuário  
+## Ator
+Contador
 
-**Objetivo:** Permitir que o usuário visualize tarefas por período (diário, semanal ou mensal).
+## Objetivo
+Permitir que o usuário visualize tarefas conforme o período selecionado.
 
-### Pré-condições
-- Tarefas disponíveis.
+## Pré-condições
+- Usuário autenticado.
+- Existirem tarefas cadastradas.
 
-### Pós-condições
+## Pós-condições
 - Tarefas filtradas exibidas.
 
-### Fluxo Principal
-1. Usuário seleciona tipo de visualização.
-2. Sistema identifica o período.
-3. Sistema filtra tarefas.
+## Fluxo Principal
+1. Usuário seleciona um período.
+2. Sistema identifica o filtro escolhido.
+3. Sistema aplica o filtro nas tarefas.
 4. Sistema atualiza a interface.
 
-### Regras de Negócio
-- RN12 — Visualização de dados por período
+## Regras de Negócio
+- RN07 — Geração de insights baseada em dados.
 
-### Requisitos Relacionados
-- RF22 — Filtro de tarefas por período
-- RF09 — Atualização visual das informações
-- RNF01 — Usabilidade  
+## Requisitos Relacionados
+- RF18 — Filtro de tarefas por período
+- RF08 — Atualização visual das informações
+- RNF01 — Usabilidade
+- RNF03 — Desempenho
 
----
-**Descrição da Atividade:**  
-Representa a filtragem de tarefas com base no período selecionado pelo usuário.
+## Descrição da Atividade
+Representa a filtragem de tarefas conforme o período selecionado pelo usuário.
 
-<img width="208" height="303" alt="image" src="https://github.com/user-attachments/assets/464a74d1-c805-4e02-b05f-fbaa24e9c4cb" />
-
----
-
-## Caso de Uso 20 — Visualizar Resumo por Período
-
-**Ator:** Sistema  
-
-**Objetivo:** Exibir resumo com base no período selecionado.
-
-### Pré-condições
-- Período selecionado.
-
-### Pós-condições
-- Resumo atualizado exibido.
-
-### Fluxo Principal
-1. Sistema identifica o período ativo.
-2. Sistema coleta dados das tarefas.
-3. Sistema gera resumo.
-4. Sistema exibe informações.
-
-### Regras de Negócio
-- RN12 — Visualização de dados por período
-
-### Requisitos Relacionados
-- RF23 — Resumo por período
-- RF20 — Geração de resumo diário
-- RNF02 — Eficiência
-
----
-**Descrição da Atividade:**  
-Representa a atualização do resumo com base no período escolhido pelo usuário.
-
-<img width="188" height="303" alt="image" src="https://github.com/user-attachments/assets/4181eca2-7c39-41a2-969b-7dbb531e0db3" />
-
----
-
-## Caso de Uso 21 — Destacar Tarefas Urgentes
-
-**Ator:** Sistema  
-
-**Objetivo:** Evidenciar tarefas com maior prioridade.
-
-### Pré-condições
-- Tarefas cadastradas.
-
-### Pós-condições
-- Tarefas urgentes destacadas.
-
-### Fluxo Principal
-1. Sistema analisa prazos.
-2. Sistema identifica urgência.
-3. Sistema aplica destaque visual.
-
-### Regras de Negócio
-- RN10 — Priorização automática
-
-### Requisitos Relacionados
-- RF24 — Destaque de tarefas urgentes
-- RF19 — Priorização automática de tarefas
-- RNF20 — Organização visual de tarefas
-
----
-**Descrição da Atividade:**  
-Representa a identificação e o destaque de tarefas prioritárias.
-
-<img width="214" height="303" alt="image" src="https://github.com/user-attachments/assets/35d61306-6712-455b-8c00-1dfc371fd7ce" />
+<img width="215" height="311" alt="image" src="https://github.com/user-attachments/assets/ce77aa06-bc89-4ab6-9abb-1c2d37ef20c7" />
 
 ---
 
@@ -767,12 +646,14 @@ Essas funcionalidades compõem o **MVP (Minimum Viable Product)** do projeto.
 - **UC04 — Exibir Tela Inicial**
 - **UC05 — Navegar entre Telas**
 - **UC08 — Visualizar Dashboard**
+- **UC09 — Acessar Painel Inteligente**
 - **UC11 — Visualizar Lista de Clientes**
-- **UC12 — Consultar Detalhes de Cliente**
-- **UC13 — Visualizar Tarefas do Dia**
-- **UC14 — Marcar Tarefa como Concluída**
-- **UC16 — Gerar Insights Inteligentes**
-- **UC17 — Gerar Resumo do Dia**
+- **UC12 — Visualizar Tarefas por Data**
+- **UC13 — Marcar Tarefa como Concluída**
+- **UC14 — Definir Prioridade de Tarefas**
+- **UC15 — Gerar Insights Inteligentes**
+- **UC16 — Gerar Resumo Diário**
+- **UC17 — Filtrar Tarefas por Período**
 
 ## Objetivo do MVP
 
@@ -780,6 +661,8 @@ O MVP permite demonstrar o fluxo principal do sistema:
 
 1. O usuário realiza login no aplicativo.
 2. O sistema apresenta o dashboard com indicadores simulados.
-3. O usuário pode acessar a lista de clientes simulados.
-4. O usuário visualiza e gerencia suas tarefas do dia.
-5. O sistema gera insights e apresenta um resumo inteligente das atividades.
+3. O usuário acessa o painel inteligente com calendário, tarefas e insights.
+4. O usuário visualiza a lista de clientes cadastrados.
+5. O usuário acompanha tarefas organizadas por data.
+6. O usuário atualiza o status e prioridade das tarefas.
+7. O sistema gera insights e apresenta um resumo diário das atividades.
