@@ -1,40 +1,80 @@
-# Documento A — Base Conceitual de Teste (ISO/IEC/IEEE 29119-1)
+# Documento A — Base Conceitual de Teste  
 
 **Projeto:** Atlas Contábil  
-**Tecnologia:** Flutter (Dart)  
-**Arquitetura:** MVVM (Model-View-ViewModel)  
-**Data:** 12/05/2024  
+**Tecnologia:** Flutter  
+**Arquitetura:** MVVM  
+**Norma aplicada:** ISO/IEC/IEEE 29119-1  
 
-## 1. Sistema sob teste
-O escopo principal deste documento é o **Fluxo de Autenticação e Navegação Inicial** do aplicativo Atlas Contábil, garantindo que apenas usuários autorizados acessem os dados estratégicos.
+---
 
-## 2. Itens de teste
-Conforme a estrutura do projeto, os itens a serem testados são:
-- `LoginViewModel`: Lógica de autenticação e mensagens de erro.
-- `SignUpViewModel`: Lógica de criação de novas contas.
-- `AuthService`: Interface de comunicação com o Firebase (Mockada).
-- `SplashView`: Lógica de redirecionamento inicial.
-- Fluxo Completo: Login → Dashboard.
+## 1. Sistema sob teste  
+Fluxo de autenticação do aplicativo Flutter.  
 
-## 3. Escopo
-- **Testes de Unidade:** Validação de regras de negócio nas ViewModels.
-- **Testes de Integração:** Fluxo de navegação entre telas.
-- **Validações:** Campos obrigatórios, formatos de e-mail e persistência de estado.
+---
 
-## 4. Fora de escopo
-- Serviços reais do Firebase (Firestore/Auth) em tempo de execução de teste.
-- Testes de performance de rede.
-- Testes de interface (UI/UX) manuais.
+## 2. Itens de teste  
+- SignUpViewModel  
+- LoginViewModel  
+- AuthRepositoryImpl  
+- FakeAuthService  
+- Fluxo Login → Home  
+- Fluxo Cadastro → Login  
 
-## 5. Requisitos Funcionais (RF)
-- **RF01:** O usuário deve conseguir se cadastrar com nome, e-mail e senha.
-- **RF02:** O sistema deve impedir cadastro com campos vazios.
-- **RF03:** O sistema deve validar o formato do e-mail.
-- **RF04:** O sistema deve retornar para a tela de Login após o cadastro.
-- **RF05:** O usuário deve conseguir fazer login com credenciais válidas.
-- **RF06:** O sistema deve navegar para a Dashboard (Home) após o login.
+---
 
-## 6. Riscos de Teste
-- **R01:** Usuário conseguir acessar a Dashboard sem estar autenticado.
-- **R02:** Falha na exibição de mensagens de erro (Feedback ao usuário).
-- **R03:** Loop infinito na tela de Splash por falha de estado.
+## 3. Escopo  
+- Cadastro  
+- Login  
+- Navegação  
+- Validação de campos  
+- Testes de unidade  
+- Testes de integração  
+
+---
+
+## 4. Fora de escopo  
+- Firebase  
+- API real  
+- Segurança  
+- Performance  
+
+---
+
+## 5. Requisitos  
+- **RF01** — O usuário deve conseguir se cadastrar.  
+- **RF02** — O sistema deve impedir cadastro com campos vazios.  
+- **RF03** — O sistema deve impedir cadastro com e-mail inválido.  
+- **RF04** — O sistema deve impedir cadastro duplicado.  
+- **RF05** — O sistema deve retornar para login após cadastro.  
+- **RF06** — O usuário deve conseguir fazer login.  
+- **RF07** — O sistema deve impedir login com campos vazios.  
+- **RF08** — O sistema deve impedir login inválido.  
+- **RF09** — O sistema deve navegar para Home após login válido.  
+
+---
+
+## 6. Condições de teste  
+- **CT01** — Validar cadastro válido  
+- **CT02** — Validar cadastro com campos vazios  
+- **CT03** — Validar e-mail inválido  
+- **CT04** — Validar cadastro duplicado  
+- **CT05** — Validar retorno ao login  
+- **CT06** — Validar login válido  
+- **CT07** — Validar login com campos vazios  
+- **CT08** — Validar login inválido  
+- **CT09** — Validar navegação para Home  
+
+---
+
+## 7. Tipos de teste  
+- Teste de Unidade  
+- Teste de Integração  
+
+---
+
+## 8. Riscos  
+- **R01** — Login inválido permitir acesso  
+- **R02** — Navegação não funcionar  
+- **R03** — Cadastro aceita dados inválidos  
+- **R04** — Mensagens não serem exibidas  
+- **R05** — Estado do ViewModel inconsistente  
