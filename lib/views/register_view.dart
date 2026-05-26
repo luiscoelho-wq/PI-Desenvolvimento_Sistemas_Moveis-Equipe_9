@@ -89,7 +89,7 @@ class _RegisterViewState extends State<RegisterView> {
                   key: _formKey,
                   child: Column(
                     children: [
-                      // EMAIL
+                      
                       TextFormField(
                         controller: emailController,
                         validator: (value) {
@@ -118,7 +118,6 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 12),
 
-                      // SENHA
                       TextFormField(
                         controller: passwordController,
                         obscureText: true,
@@ -137,7 +136,6 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 10),
 
-                      // REGRAS DA SENHA
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -158,7 +156,6 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 12),
 
-                      // CONFIRMAR SENHA
                       TextFormField(
                         controller: confirmPasswordController,
                         obscureText: true,
@@ -186,7 +183,6 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 12),
 
-                      // CPF
                       TextFormField(
                         controller: cpfController,
                         inputFormatters: [CpfInputFormatter()],
@@ -210,7 +206,6 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 20),
 
-                      // BOTÃO
                       SizedBox(
                         width: double.infinity,
                         height: 48,
