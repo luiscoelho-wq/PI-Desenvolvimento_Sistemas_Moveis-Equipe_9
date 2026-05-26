@@ -55,10 +55,7 @@ class _SplashViewState extends State<SplashView> {
 
             const Text(
               "Organização inteligente para seu negócio",
-              style: TextStyle(
-                fontSize: 14,
-                color: Colors.grey,
-              ),
+              style: TextStyle(fontSize: 14, color: Colors.grey),
             ),
           ],
         ),
