@@ -11,11 +11,11 @@ class CategoryPieChart extends StatelessWidget {
   Color _color(TaskCategory c) {
     switch (c) {
       case TaskCategory.tributos:
-        return const Color.fromARGB(255, 145, 107, 234);
+        return const Color.fromARGB(255, 140, 48, 245);
       case TaskCategory.honorarios:
-        return const Color.fromARGB(255, 191, 233, 136);
+        return const Color.fromARGB(255, 27, 101, 87);
       case TaskCategory.fiscal:
-        return const Color.fromARGB(255, 148, 183, 238);
+        return const Color.fromARGB(255, 156, 205, 248);
     }
   }
 
@@ -59,23 +59,41 @@ class CategoryPieChart extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                "Resumo diário",
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xFF2D2D2D),
-                ),
+
+
+              const Row(
+                children: [
+                  Icon(
+                Icons.bar_chart_rounded,
+                    size: 18,
+                    color: Color(0xFF6A1B9A),
+                  ),
+                  SizedBox(width: 8),
+                  Text(
+                    "Resumo diário",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xFF2D2D2D),
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(height: 4),
+
+              const SizedBox(height: 6),
+
+         
               const Text(
                 "Tipo de Tarefa",
                 style: TextStyle(
-                  fontSize: 13,
-                  color: Color.fromARGB(255, 42, 41, 41),
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromARGB(255, 70, 70, 70),
                 ),
               ),
+
               const SizedBox(height: 18),
+
               Row(
                 children: [
                   SizedBox(
@@ -91,9 +109,7 @@ class CategoryPieChart extends StatelessWidget {
                             value: value == 0 ? 1 : value,
                             color: _color(c),
                             radius: 26,
-                            title: value == 0
-                                ? ""
-                                : "${value.toStringAsFixed(0)}%",
+                            title: value == 0 ? "" : "${value.toStringAsFixed(0)}%",
                             titleStyle: const TextStyle(
                               fontSize: 11,
                               fontWeight: FontWeight.bold,
@@ -104,15 +120,17 @@ class CategoryPieChart extends StatelessWidget {
                       ),
                     ),
                   ),
+
                   const SizedBox(width: 20),
+
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: TaskCategory.values.map((c) {
                         final percent = data[c] ?? 0;
+
                         return Padding(
-                          padding:
-                              const EdgeInsets.symmetric(vertical: 8),
+                          padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Row(
                             children: [
                               Container(
@@ -136,7 +154,7 @@ class CategoryPieChart extends StatelessWidget {
                                 "${percent.toStringAsFixed(0)}%",
                                 style: const TextStyle(
                                   fontWeight: FontWeight.w600,
-                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  color: Colors.black,
                                 ),
                               ),
                             ],
