@@ -20,27 +20,9 @@ class _RegisterViewState extends State<RegisterView> {
   final confirmPasswordController = TextEditingController();
   final cpfController = TextEditingController();
 
-  final allowedDomains = [
-    "gmail.com",
-    "outlook.com",
-    "icloud.com",
-  ];
-
-  bool emailValidDomain = false;
-
   bool hasUppercase = false;
   bool hasNumber = false;
   bool hasMinLength = false;
-
-  void _checkEmailDomain(String value) {
-    final email = value.trim().toLowerCase();
-
-    setState(() {
-      emailValidDomain = allowedDomains.any(
-        (d) => email.endsWith("@$d"),
-      );
-    });
-  }
 
   void _checkPasswordRules(String value) {
     setState(() {
@@ -50,8 +32,7 @@ class _RegisterViewState extends State<RegisterView> {
     });
   }
 
-  bool get isPasswordValid =>
-      hasUppercase && hasNumber && hasMinLength;
+  bool get isPasswordValid => hasUppercase && hasNumber && hasMinLength;
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +43,6 @@ class _RegisterViewState extends State<RegisterView> {
       body: SafeArea(
         child: Column(
           children: [
-            
             Container(
               width: double.infinity,
               padding: const EdgeInsets.fromLTRB(20, 22, 20, 22),
@@ -70,10 +50,7 @@ class _RegisterViewState extends State<RegisterView> {
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [
-                    Color(0xFF7B2FD3),
-                    Color(0xFF6A1B9A),
-                  ],
+                  colors: [Color(0xFF7B2FD3), Color(0xFF6A1B9A)],
                 ),
               ),
               child: Stack(
@@ -102,6 +79,7 @@ class _RegisterViewState extends State<RegisterView> {
                 ],
               ),
             ),
+
             const SizedBox(height: 20),
 
             Expanded(
@@ -111,16 +89,20 @@ class _RegisterViewState extends State<RegisterView> {
                   key: _formKey,
                   child: Column(
                     children: [
+                      // EMAIL
                       TextFormField(
                         controller: emailController,
-                        onChanged: _checkEmailDomain,
                         validator: (value) {
                           if (value == null || value.isEmpty) {
                             return "Email obrigatório";
                           }
-                          if (!emailValidDomain) {
-                            return "Use Gmail, Outlook ou iCloud";
+
+                          final emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+');
+
+                          if (!emailRegex.hasMatch(value.trim())) {
+                            return "Digite um email válido";
                           }
+
                           return null;
                         },
                         decoration: InputDecoration(
@@ -134,47 +116,9 @@ class _RegisterViewState extends State<RegisterView> {
                         ),
                       ),
 
-                      const SizedBox(height: 10),
-
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: allowedDomains.map((domain) {
-                          final ok = emailController.text
-                              .trim()
-                              .toLowerCase()
-                              .endsWith("@$domain");
-
-                          return Padding(
-                            padding:
-                                const EdgeInsets.symmetric(vertical: 2),
-                            child: Row(
-                              children: [
-                                Icon(
-                                  ok
-                                      ? Icons.check_circle
-                                      : Icons.circle_outlined,
-                                  size: 14,
-                                  color: ok
-                                      ? Colors.green
-                                      : Colors.grey,
-                                ),
-                                const SizedBox(width: 6),
-                                Text(
-                                  domain,
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    color:
-                                        ok ? Colors.green : Colors.grey,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          );
-                        }).toList(),
-                      ),
-
                       const SizedBox(height: 12),
 
+                      // SENHA
                       TextFormField(
                         controller: passwordController,
                         obscureText: true,
@@ -193,25 +137,28 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 10),
 
+                      // REGRAS DA SENHA
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text(
                             "Requisitos da senha",
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: Colors.grey,
-                            ),
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
                           ),
+
                           const SizedBox(height: 6),
+
                           _ruleItem("1 letra maiúscula", hasUppercase),
+
                           _ruleItem("1 número", hasNumber),
+
                           _ruleItem("mínimo 6 caracteres", hasMinLength),
                         ],
                       ),
 
                       const SizedBox(height: 12),
 
+                      // CONFIRMAR SENHA
                       TextFormField(
                         controller: confirmPasswordController,
                         obscureText: true,
@@ -219,9 +166,11 @@ class _RegisterViewState extends State<RegisterView> {
                           if (value == null || value.isEmpty) {
                             return "Confirme sua senha";
                           }
+
                           if (value != passwordController.text) {
                             return "As senhas não coincidem";
                           }
+
                           return null;
                         },
                         decoration: InputDecoration(
@@ -237,6 +186,7 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 12),
 
+                      // CPF
                       TextFormField(
                         controller: cpfController,
                         inputFormatters: [CpfInputFormatter()],
@@ -244,6 +194,7 @@ class _RegisterViewState extends State<RegisterView> {
                           if (value == null || value.isEmpty) {
                             return "CPF obrigatório";
                           }
+
                           return null;
                         },
                         decoration: InputDecoration(
@@ -259,27 +210,32 @@ class _RegisterViewState extends State<RegisterView> {
 
                       const SizedBox(height: 20),
 
+                      // BOTÃO
                       SizedBox(
                         width: double.infinity,
                         height: 48,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF6A1B9A),
-                            foregroundColor: Colors.white, 
+                            foregroundColor: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
                           onPressed: () async {
-                            if (!_formKey.currentState!.validate()) return;
+                            if (!_formKey.currentState!.validate()) {
+                              return;
+                            }
 
-                            if (!isPasswordValid || !emailValidDomain) {
+                            if (!isPasswordValid) {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
-                                  content:
-                                      Text("Verifique os dados informados"),
+                                  content: Text(
+                                    "Verifique os dados informados",
+                                  ),
                                 ),
                               );
+
                               return;
                             }
 
@@ -291,14 +247,14 @@ class _RegisterViewState extends State<RegisterView> {
 
                             Navigator.pop(context);
                           },
-                        child: const Text(
-  "Registrar",
-  style: TextStyle(
-    color: Colors.white,
-    fontSize: 16,
-    fontWeight: FontWeight.bold,
-  ),
-),
+                          child: const Text(
+                            "Registrar",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
                     ],
@@ -322,7 +278,9 @@ class _RegisterViewState extends State<RegisterView> {
             size: 14,
             color: ok ? Colors.green : Colors.grey,
           ),
+
           const SizedBox(width: 6),
+
           Text(
             text,
             style: TextStyle(
