@@ -7,23 +7,23 @@ import '../services/auth_service.dart';
 class DashboardViewModel extends ChangeNotifier {
   final TaskRepository repository;
   final AuthService authService;
-  
+
+  // Criamos uma conexão com o seu serviço de IA aqui dentro
   final AIService _aiService = AIService();
 
-  DashboardViewModel({
-    required this.repository,
-    required this.authService,
-  });
+  DashboardViewModel({required this.repository, required this.authService});
 
   DateTime selectedDay = DateTime(
     DateTime.now().year,
     DateTime.now().month,
     DateTime.now().day,
   );
-  
+
+  // Aqui vamos guardar os textos (insights) que a IA criar para cada dia
   Map<DateTime, String> insightsByDay = {};
   Map<DateTime, bool> generatedByDay = {};
-  
+
+  // Essa caixinha avisa o aplicativo se a IA está "pensando" (carregando) no momento
   bool isLoadingInsight = false;
 
   DateTime _normalize(DateTime date) =>
@@ -121,40 +121,55 @@ class DashboardViewModel extends ChangeNotifier {
     }
 
     return {
-      for (final e in counts.entries)
-        e.key: (e.value / totalTasks) * 100,
+      for (final e in counts.entries) e.key: (e.value / totalTasks) * 100,
     };
   }
 
+  // Se a IA ainda não criou nada para o dia, devolvemos um texto padrão seguro em formato JSON
   String get insight =>
-      insightsByDay[_normalize(selectedDay)] ?? '{"recomendacoes":[], "prioridades":[]}';
+      insightsByDay[_normalize(selectedDay)] ??
+      '{"recomendacoes":[], "prioridades":[]}';
 
+  // Esta é a função principal que chama a Inteligência Artificial!
   Future<void> generateInsightForDay(DateTime day) async {
     final normalizedDay = _normalize(day);
-    
+
+    // Pegamos as tarefas daquele dia
     final tasks = await repository.getTasks(normalizedDay);
 
     if (tasks.isEmpty) {
-      insightsByDay[normalizedDay] = '{"recomendacoes":["Nenhuma tarefa cadastrada para hoje."], "prioridades":[]}';
+      insightsByDay[normalizedDay] =
+          '{"recomendacoes":["Nenhuma tarefa cadastrada para hoje."], "prioridades":[]}';
       notifyListeners();
       return;
     }
 
+    // Juntamos o nome, a categoria e a prioridade das tarefas em um texto só para a IA ler
     final text = tasks
-        .map((e) => "- [${e.category.name.toUpperCase()}] ${e.description} (Prioridade: ${e.priority.name})")
+        .map(
+          (e) =>
+              "- [${e.category.name.toUpperCase()}] ${e.description} (Prioridade: ${e.priority.name})",
+        )
         .join("\n");
 
+    // Avisamos a tela que a IA começou a carregar (vai aparecer a rodinha de carregando)
     isLoadingInsight = true;
     notifyListeners();
 
     try {
+      // Enviamos o texto para o Gemini e esperamos a resposta
       final result = await _aiService.generateInsight(text);
-      
+
+      // Guardamos o resultado
       insightsByDay[normalizedDay] = result;
       generatedByDay[normalizedDay] = true;
     } catch (e) {
-      insightsByDay[normalizedDay] = '{"recomendacoes":["Não foi possível carregar os insights agora."], "prioridades":[]}';
-    } {
+      // Se der algum erro (ex: falta de internet), guardamos uma mensagem de erro estilizada
+      insightsByDay[normalizedDay] =
+          '{"recomendacoes":["Não foi possível carregar os insights agora."], "prioridades":[]}';
+    }
+    {
+      // Por fim, avisamos que a IA terminou de carregar
       isLoadingInsight = false;
       notifyListeners();
     }
