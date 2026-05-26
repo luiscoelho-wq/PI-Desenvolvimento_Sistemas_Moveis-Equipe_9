@@ -19,9 +19,7 @@ import 'package:google_fonts/google_fonts.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(const MyApp());
 }
@@ -33,9 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider<AuthService>(
-          create: (_) => AuthService(),
-        ),
+        ChangeNotifierProvider<AuthService>(create: (_) => AuthService()),
         ChangeNotifierProvider<ClientViewModel>(
           create: (_) => ClientViewModel(),
         ),
@@ -59,9 +55,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/login': (context) => LoginView(),
           '/register': (context) => const RegisterView(),
-          '/dashboard': (context) => DashboardView(
-                vm: context.read<DashboardViewModel>(),
-              ),
+          '/dashboard': (context) =>
+              DashboardView(vm: context.read<DashboardViewModel>()),
         },
       ),
     );
