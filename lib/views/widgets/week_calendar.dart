@@ -26,7 +26,6 @@ class _WeekCalendarState extends State<WeekCalendar> {
   @override
   void didUpdateWidget(covariant WeekCalendar oldWidget) {
     super.didUpdateWidget(oldWidget);
-    // Mantém a semana sincronizada caso o dia selecionado mude externamente
     startOfWeek = _getStartOfWeek(widget.selectedDay);
   }
 
@@ -70,7 +69,6 @@ class _WeekCalendarState extends State<WeekCalendar> {
       child: Column(
         children: [
           
-          // HEADER DO CALENDÁRIO (Setas + Nome do Mês)
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -79,7 +77,6 @@ class _WeekCalendarState extends State<WeekCalendar> {
                 onPressed: () => _changeWeek(-1),
               ),
               
-              // Nome do mês centralizado e estilizado
               Text(
                 _getMonthName(startOfWeek),
                 style: const TextStyle(
@@ -98,7 +95,6 @@ class _WeekCalendarState extends State<WeekCalendar> {
 
           const SizedBox(height: 10),
 
-          // DIAS DA SEMANA
           Row(
             children: List.generate(7, (index) {
               final day = startOfWeek.add(Duration(days: index));
