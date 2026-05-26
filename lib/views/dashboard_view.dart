@@ -8,10 +8,7 @@ import 'login_view.dart';
 class DashboardView extends StatefulWidget {
   final DashboardViewModel vm;
 
-  const DashboardView({
-    super.key,
-    required this.vm,
-  });
+  const DashboardView({super.key, required this.vm});
 
   @override
   State<DashboardView> createState() => _DashboardViewState();
@@ -32,7 +29,7 @@ class _DashboardViewState extends State<DashboardView> {
           return SafeArea(
             child: Column(
               children: [
-
+                // HEADER
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(22, 24, 22, 30),
@@ -40,10 +37,7 @@ class _DashboardViewState extends State<DashboardView> {
                     gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
-                      colors: [
-                        Color(0xFF7B2FD3),
-                        Color(0xFF6A1B9A),
-                      ],
+                      colors: [Color(0xFF7B2FD3), Color(0xFF6A1B9A)],
                     ),
                     boxShadow: [
                       BoxShadow(
@@ -56,7 +50,7 @@ class _DashboardViewState extends State<DashboardView> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      
+                      // TEXTO
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -79,35 +73,31 @@ class _DashboardViewState extends State<DashboardView> {
                         ],
                       ),
 
+                      // AVATAR
                       GestureDetector(
                         onTap: () async {
                           await vm.authService.logout();
                           Navigator.pushAndRemoveUntil(
                             context,
-                            MaterialPageRoute(
-                              builder: (_) => LoginView(),
-                            ),
+                            MaterialPageRoute(builder: (_) => LoginView()),
                             (route) => false,
                           );
                         },
+
                         child: Container(
                           padding: const EdgeInsets.all(4),
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.white24,
                             shape: BoxShape.circle,
                           ),
-                          child: CircleAvatar(
+
+                          child: const CircleAvatar(
                             radius: 24,
                             backgroundColor: Colors.white,
-                            child: Text(
-                              vm.authService.currentUser?.name
-                                      .substring(0, 2)
-                                      .toUpperCase() ??
-                                  "LM",
-                              style: const TextStyle(
-                                color: Color(0xFF6A1B9A),
-                                fontWeight: FontWeight.bold,
-                              ),
+                            child: Icon(
+                              Icons.logout,
+                              color: Color(0xFF6A1B9A),
+                              size: 24,
                             ),
                           ),
                         ),
@@ -116,6 +106,7 @@ class _DashboardViewState extends State<DashboardView> {
                   ),
                 ),
 
+                // CONTEÚDO
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
@@ -129,6 +120,7 @@ class _DashboardViewState extends State<DashboardView> {
 
                         const SizedBox(height: 18),
 
+                        // CARDS MÉTRICAS
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
@@ -137,8 +129,11 @@ class _DashboardViewState extends State<DashboardView> {
                                 child: FutureBuilder<int>(
                                   future: vm.pendentes,
                                   builder: (context, snapshot) {
-                                    if (snapshot.connectionState == ConnectionState.waiting) {
-                                      return const Center(child: CircularProgressIndicator());
+                                    if (snapshot.connectionState ==
+                                        ConnectionState.waiting) {
+                                      return const Center(
+                                        child: CircularProgressIndicator(),
+                                      );
                                     }
                                     return _MetricCard(
                                       title: "Pendentes",
@@ -153,8 +148,11 @@ class _DashboardViewState extends State<DashboardView> {
                                 child: FutureBuilder<int>(
                                   future: vm.concluidas,
                                   builder: (context, snapshot) {
-                                    if (snapshot.connectionState == ConnectionState.waiting) {
-                                      return const Center(child: CircularProgressIndicator());
+                                    if (snapshot.connectionState ==
+                                        ConnectionState.waiting) {
+                                      return const Center(
+                                        child: CircularProgressIndicator(),
+                                      );
                                     }
                                     return _MetricCard(
                                       title: "Concluídas",
@@ -169,8 +167,11 @@ class _DashboardViewState extends State<DashboardView> {
                                 child: FutureBuilder<int>(
                                   future: vm.total,
                                   builder: (context, snapshot) {
-                                    if (snapshot.connectionState == ConnectionState.waiting) {
-                                      return const Center(child: CircularProgressIndicator());
+                                    if (snapshot.connectionState ==
+                                        ConnectionState.waiting) {
+                                      return const Center(
+                                        child: CircularProgressIndicator(),
+                                      );
                                     }
                                     return _MetricCard(
                                       title: "Total",
@@ -190,6 +191,7 @@ class _DashboardViewState extends State<DashboardView> {
                         CategoryPieChart(vm: vm),
                         const SizedBox(height: 18),
 
+                        // QUADRADO DE INSIGHTS
                         Container(
                           margin: const EdgeInsets.symmetric(horizontal: 16),
                           padding: const EdgeInsets.all(18),
@@ -231,137 +233,208 @@ class _DashboardViewState extends State<DashboardView> {
                                 const Center(
                                   child: Padding(
                                     padding: EdgeInsets.symmetric(vertical: 20),
-                                    child: CircularProgressIndicator(color: Color(0xFF7B2FD3)),
+                                    child: CircularProgressIndicator(
+                                      color: Color(0xFF7B2FD3),
+                                    ),
                                   ),
                                 )
                               else ...[
-                                if (vm.insight.isEmpty || vm.insight.contains('{"recomendacoes":'))
+                                if (vm.insight.isEmpty ||
+                                    vm.insight.contains('{"recomendacoes":'))
                                   Text(
                                     "Nenhum insight gerado ainda. Cadastre tarefas para ativar a IA!",
-                                    style: TextStyle(fontSize: 13, color: Colors.grey.shade600),
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.grey.shade600,
+                                    ),
                                   )
-                                else ...(() {
-                                  final linhas = vm.insight.split('\n');
-                                  List<Widget> widgets = [];
-                                  
-                                  bool emUrgente = false;
-                                  bool adicionouTituloDicas = false;
-                                  bool adicionouTituloUrgente = false;
+                                else
+                                  ...(() {
+                                    final linhas = vm.insight.split('\n');
+                                    List<Widget> widgets = [];
 
-                                  for (var linha in linhas) {
-                                    String textoLimpo = linha
-                                        .replaceAll('**', '')
-                                        .replaceAll('###', '')
-                                        .replaceAll('*', '')
-                                        .replaceAll('•', '')
-                                        .trim();
+                                    bool emUrgente = false;
+                                    bool adicionouTituloDicas = false;
+                                    bool adicionouTituloUrgente = false;
 
-                                    if (textoLimpo.isEmpty) continue;
+                                    for (var linha in linhas) {
+                                      String textoLimpo = linha
+                                          .replaceAll('**', '')
+                                          .replaceAll('###', '')
+                                          .replaceAll('*', '')
+                                          .replaceAll('•', '')
+                                          .trim();
 
-                                    if (textoLimpo.toLowerCase().startsWith('olá') || 
-                                        textoLimpo.toLowerCase().contains('aqui estão algumas dicas') ||
-                                        textoLimpo.toLowerCase() == 'dicas gerais' ||
-                                        textoLimpo.toLowerCase() == 'o que é mais urgente') {
-                                      
-                                      if (textoLimpo.toLowerCase().contains('urgente')) {
+                                      if (textoLimpo.isEmpty) continue;
+
+                                      // 1. Pula saudações e introduções genéricas da IA
+                                      if (textoLimpo.toLowerCase().startsWith(
+                                            'olá',
+                                          ) ||
+                                          textoLimpo.toLowerCase().contains(
+                                            'aqui estão algumas dicas',
+                                          ) ||
+                                          textoLimpo.toLowerCase() ==
+                                              'dicas gerais' ||
+                                          textoLimpo.toLowerCase() ==
+                                              'o que é mais urgente') {
+                                        // Se a linha indicar explicitamente a seção urgente, vira a chave
+                                        if (textoLimpo.toLowerCase().contains(
+                                          'urgente',
+                                        )) {
+                                          emUrgente = true;
+                                        }
+                                        continue;
+                                      }
+
+                                      // 2. Controla a troca de seções caso apareça a palavra urgente no meio do caminho
+                                      if (textoLimpo.toLowerCase().contains(
+                                            'urgente',
+                                          ) &&
+                                          !adicionouTituloUrgente) {
                                         emUrgente = true;
                                       }
-                                      continue;
-                                    }
 
-                                    if (textoLimpo.toLowerCase().contains('urgente') && !adicionouTituloUrgente) {
-                                      emUrgente = true;
-                                    }
-
-                                    if (!emUrgente && !adicionouTituloDicas) {
-                                      widgets.add(
-                                        const Padding(
-                                          padding: EdgeInsets.only(bottom: 10, top: 4),
-                                          child: Text(
-                                            "💡 DICAS E RECOMENDAÇÕES",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold, 
-                                              color: Color(0xFF7B2FD3), 
-                                              fontSize: 13, 
-                                              letterSpacing: 0.5
+                                      // 3. Renderiza o título de Dicas apenas UMA vez no topo
+                                      if (!emUrgente && !adicionouTituloDicas) {
+                                        widgets.add(
+                                          const Padding(
+                                            padding: EdgeInsets.only(
+                                              bottom: 10,
+                                              top: 4,
                                             ),
-                                          ),
-                                        ),
-                                      );
-                                      adicionouTituloDicas = true;
-                                    }
-
-                                    if (emUrgente && !adicionouTituloUrgente) {
-                                      widgets.add(
-                                        const Padding(
-                                          padding: EdgeInsets.only(top: 16, bottom: 10),
-                                          child: Text(
-                                            "⚠️ O QUE É MAIS URGENTE HOJE",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold, 
-                                              color: Colors.redAccent, 
-                                              fontSize: 13, 
-                                              letterSpacing: 0.5
-                                            ),
-                                          ),
-                                        ),
-                                      );
-                                      adicionouTituloUrgente = true;
-                                    }
-
-                                    widgets.add(
-                                      Container(
-                                        margin: const EdgeInsets.only(bottom: 8),
-                                        padding: const EdgeInsets.all(12),
-                                        decoration: BoxDecoration(
-                                          color: emUrgente ? const Color(0xFFFFF5F5) : const Color(0xFFF9F5FF),
-                                          borderRadius: BorderRadius.circular(10),
-                                          border: Border.all(
-                                            color: emUrgente ? Colors.redAccent.withOpacity(0.2) : const Color(0xFF7B2FD3).withOpacity(0.15),
-                                          ),
-                                        ),
-                                        child: Row(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Icon(
-                                              emUrgente ? Icons.error_outline : Icons.lightbulb_outline,
-                                              color: emUrgente ? Colors.redAccent : const Color(0xFF7B2FD3),
-                                              size: 18,
-                                            ),
-                                            const SizedBox(width: 10),
-                                            Expanded(
-                                              child: Text(
-                                                textoLimpo,
-                                                style: TextStyle(
-                                                  fontSize: 13,
-                                                  color: emUrgente ? const Color(0xFF7A1C1C) : const Color(0xFF3B1E54),
-                                                  fontWeight: FontWeight.w500,
-                                                  height: 1.4,
-                                                ),
+                                            child: Text(
+                                              "💡 DICAS E RECOMENDAÇÕES",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Color(0xFF7B2FD3),
+                                                fontSize: 13,
+                                                letterSpacing: 0.5,
                                               ),
                                             ),
-                                          ],
-                                        ),
-                                      ),
-                                    );
-                                  }
+                                          ),
+                                        );
+                                        adicionouTituloDicas = true;
+                                      }
 
-                                  return widgets.isNotEmpty ? widgets : [Text(vm.insight, style: const TextStyle(fontSize: 13))];
-                                })(),
+                                      // 4. Renderiza o título de Urgente apenas UMA vez quando a seção mudar
+                                      if (emUrgente &&
+                                          !adicionouTituloUrgente) {
+                                        widgets.add(
+                                          const Padding(
+                                            padding: EdgeInsets.only(
+                                              top: 16,
+                                              bottom: 10,
+                                            ),
+                                            child: Text(
+                                              "⚠️ O QUE É MAIS URGENTE HOJE",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.redAccent,
+                                                fontSize: 13,
+                                                letterSpacing: 0.5,
+                                              ),
+                                            ),
+                                          ),
+                                        );
+                                        adicionouTituloUrgente = true;
+                                      }
+
+                                      // 5. Adiciona o card com o conteúdo real
+                                      widgets.add(
+                                        Container(
+                                          margin: const EdgeInsets.only(
+                                            bottom: 8,
+                                          ),
+                                          padding: const EdgeInsets.all(12),
+                                          decoration: BoxDecoration(
+                                            color: emUrgente
+                                                ? const Color(0xFFFFF5F5)
+                                                : const Color(0xFFF9F5FF),
+                                            borderRadius: BorderRadius.circular(
+                                              10,
+                                            ),
+                                            border: Border.all(
+                                              color: emUrgente
+                                                  ? Colors.redAccent
+                                                        .withOpacity(0.2)
+                                                  : const Color(
+                                                      0xFF7B2FD3,
+                                                    ).withOpacity(0.15),
+                                            ),
+                                          ),
+                                          child: Row(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Icon(
+                                                emUrgente
+                                                    ? Icons.error_outline
+                                                    : Icons.lightbulb_outline,
+                                                color: emUrgente
+                                                    ? Colors.redAccent
+                                                    : const Color(0xFF7B2FD3),
+                                                size: 18,
+                                              ),
+                                              const SizedBox(width: 10),
+                                              Expanded(
+                                                child: Text(
+                                                  textoLimpo,
+                                                  style: TextStyle(
+                                                    fontSize: 13,
+                                                    color: emUrgente
+                                                        ? const Color(
+                                                            0xFF7A1C1C,
+                                                          )
+                                                        : const Color(
+                                                            0xFF3B1E54,
+                                                          ),
+                                                    fontWeight: FontWeight.w500,
+                                                    height: 1.4,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      );
+                                    }
+
+                                    return widgets.isNotEmpty
+                                        ? widgets
+                                        : [
+                                            Text(
+                                              vm.insight,
+                                              style: const TextStyle(
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                          ];
+                                  })(),
                               ],
 
                               const SizedBox(height: 10),
-                              
+
+                              // Botão roxo de atualizar
                               Align(
                                 alignment: Alignment.centerRight,
                                 child: TextButton.icon(
-                                  onPressed: vm.isLoadingInsight 
-                                      ? null 
-                                      : () => vm.generateInsightForDay(vm.selectedDay),
-                                  icon: const Icon(Icons.auto_awesome, size: 14, color: Color(0xFF6A1B9A)),
+                                  onPressed: vm.isLoadingInsight
+                                      ? null
+                                      : () => vm.generateInsightForDay(
+                                          vm.selectedDay,
+                                        ),
+                                  icon: const Icon(
+                                    Icons.auto_awesome,
+                                    size: 14,
+                                    color: Color(0xFF6A1B9A),
+                                  ),
                                   label: const Text(
                                     "Atualizar Insights",
-                                    style: TextStyle(color: Color(0xFF6A1B9A), fontSize: 12),
+                                    style: TextStyle(
+                                      color: Color(0xFF6A1B9A),
+                                      fontSize: 12,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -413,10 +486,7 @@ class _MetricCard extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 8),
           Text(
